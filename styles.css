@@ -5,14 +5,14 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #fffafa;
+    background-color: #63bb40;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .first{
     width: 300pt;
-    height: 330pt;
-    border: 1px solid #777777;
+    height: 350pt;
+    border: 0px solid #777777;
     border-radius: 10pt;
 }
 
