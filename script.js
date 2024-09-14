@@ -2,6 +2,16 @@ const users = [
     { username: "AL-AMEEN", password: "23/208CHM/420" },
     { username: "ISAAC", password: "23/207ACC/924" },
     { username: "AYONIJOYCE", password: "23/208CHM/395" },
+    { username: "ZUBEIDAH", password: "23/208CHM/417" },
+    { username: "AKACHUKWU", password: "23/208CHM/358" },
+    { username: "FATHIA", password: "23/208CHM/379" },
+    { username: "MARDIYA", password: "23/208CHM/353" },
+    { username: "MIRACLE", password: "23/208CHM/355" },
+    { username: "ABIMBOLA", password: "23/208CHM/340" },
+    { username: "JACKSON", password: "23/208CHM/394" },
+    { username: "MAAMI", password: "23/208CHM/401" },
+    { username: "CHIMAOBI", password: "23/208CHM/415" },
+    //THE ADMIN LOG-IN INFO
     { username: "ADMIN", password: "04926514", isAdmin: true }  // Admin account
     // Add more users as needed
 ];
