@@ -11,6 +11,19 @@ const users = [
     { username: "JACKSON", password: "23/208CHM/394" },
     { username: "MAAMI", password: "23/208CHM/401" },
     { username: "CHIMAOBI", password: "23/208CHM/415" },
+     { username: "HAVILAH", password: "23/208CHM/399" },
+     { username: "UMMI", password: "23/208CHM/330" },
+     { username: "MICHEAL", password: "23/207ACC/832" },
+     { username: "FELICIA", password: "1234" },
+    { username: "SHALOM", password: "1234" },
+    { username: "JOY", password: "1234" },
+    { username: "ABDULRAHMAN", password: "1234" },
+    { username: "HOPE", password: "1234" },
+    { username: "RASHEEDAT", password: "1234" },
+    { username: "OLUCHI", password: "1234" },
+    { username: "RODIAT", password: "23/208CHM/412" },
+    { username: "AISHA", password: "23/208CHM/350" },
+    { username: "JEMILAT", password: "23/208CHM/367" },
     //THE ADMIN LOG-IN INFO
     { username: "ADMIN", password: "04926514", isAdmin: true }  // Admin account
     // Add more users as needed
