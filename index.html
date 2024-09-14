@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="first">
+        <table height="420pt" width="400pt" border="0px">
+            <tr height="35pt" class="flow">
+                <td>
+                    <marquee behavior="" direction="">
+                        Welcome to the practice test, please note in your mind that this is
+                        only a practice test ensure to help us ahead of our upcoming assessment
+                    </marquee>
+                </td>
+            </tr>
+            <tr height="40pt" class="first-heading">
+                <td class="first-logo">
+                    <img src="uni.png" alt="">
+                    UNI ABUJA
+                </td>
+            </tr>
+            <tr height="40pt" class="Sign-In">
+                <td>Sign-In Portal</td>
+            </tr>
+            <tr height="200pt">
+                <td>
+                    <form id="details-form">
+                        <label for="role">ROLE</label><br>
+                        <select id="role">
+                            <option value="student">Student</option>
+                            <option value="admin">Admin</option>
+                        </select><br><br>                        
+                        <label for="user-name">USERNAME</label><br>
+                        <input type="text" placeholder="Your Name" id="user-name"><br><br>
+                        <label for="password">PASSWORD</label><br>
+                        <input type="password" placeholder="********" id="password"><br><br>
+                        <button type="button" id="start-btn" class="start-btn">Sign In</button><br>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="exam-container" style="display: none;">
+        <!-- Exam content will be injected here by JavaScript -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

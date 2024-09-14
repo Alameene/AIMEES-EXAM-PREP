@@ -1,0 +1,90 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fffafa;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.first{
+    width: 300pt;
+    height: 330pt;
+    border: 1px solid #777777;
+    border-radius: 10pt;
+}
+
+table{
+    border-radius: 10pt;
+    background-color: #fff;
+}
+
+.first-logo img{
+    height: 20pt;
+    width: 20pt;
+    border: #fff solid transparent;
+    border-radius: 30pt;
+}
+
+.flow td marquee{
+    color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.first-heading td{
+    color: rgb(9, 97, 9);
+    text-align: center;
+    padding: 0;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.Sign-In td{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #db1212;
+}
+
+select{
+    color: #383838;
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+}
+
+label{
+    color: #383838;
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+}
+
+input{
+    height: 30pt;
+    width: 200pt;
+    margin-left: 30px;
+
+}
+
+::placeholder{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.start-btn{
+    color: rgb(255, 255, 255);
+    height: 30pt;
+    width: 200pt;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: linear-gradient( rgba(228, 16, 16, 0.897),rgba(50, 253, 32, 0.911));
+    border-radius: 5px;
+}
