@@ -1,47 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Blocked Page</title>
-</head>
-
-<body>
-    <div id="coverBlock" class="cover-block">
-        <h1>This page is under maintenance and remains the property of AIMEES WD</h1>
-        <p>Contact the developer for more information.</p>
-        <a href="https://wa.me/09132252381" class="contact-link">Contact Us</a>
-    </div>
-</body>
-
-</html>
-<!--
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASSESMENT</title>
+    <title>Library Exam Portal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="first">
-        <table height="400pt" width="400pt" border="0px">
+        <table height="380pt" width="400pt" border="0px">
             <tr height="35pt" class="flow">
                 <td>
                     <marquee behavior="" direction="">
                         Welcome to the practice test, please note in your mind that this is
-                        only a practice test ensure to help us ahead of our upcoming assessment
+                        only a practice test to help us ahead of our upcoming assessment
                     </marquee>
                 </td>
             </tr>
             <tr height="40pt" class="first-heading">
                 <td class="first-logo">
-                    <img src="uni.png" alt="">
-                    UNI ABUJA
+                    <img src="uni.png" alt="University Logo" style="height: 30px; vertical-align: middle;">
+                    <span style="vertical-align: middle;">UNI ABUJA</span>
                 </td>
             </tr>
             <tr height="40pt" class="Sign-In">
@@ -50,16 +29,13 @@
             <tr height="200pt">
                 <td>
                     <form id="details-form">
-                        <label for="role">ROLE</label><br>
-                        <select id="role">
-                            <option value="student">Student</option>
-                            <option value="admin">Admin</option>
-                        </select><br><br>                        
                         <label for="user-name">USERNAME</label><br>
-                        <input type="text" placeholder="Your Name" id="user-name"><br><br>
+                        <input type="text" placeholder="Enter your username" id="user-name" required><br><br>
                         <label for="password">PASSWORD</label><br>
-                        <input type="password" placeholder="********" id="password"><br><br>
-                        <button type="button" id="start-btn" class="start-btn">Sign In</button><br>
+                        <input type="password" placeholder="Enter your password" id="password" required><br><br>
+                        <button type="submit" id="start-btn" class="start-btn">Sign In</button><br>
+                        <br>
+                        <button id="admin-btn">Admin Login</button> <!-- Admin Login button -->
                     </form>
                 </td>
             </tr>
@@ -67,8 +43,11 @@
     </div>
     
     <div id="exam-container" style="display: none;">
-        <!-- Exam content will be injected here by JavaScript 
+        <!-- Exam content will be injected here by JavaScript -->
+    </div>
+    <div id="results-container" style="display: none;">
+        <!-- Results will be displayed here -->
     </div>
     <script src="script.js"></script>
 </body>
-</html>-->
+</html>
