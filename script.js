@@ -1,3 +1,4 @@
+// User data with unique usernames
 const users = [
     { username: "AL-AMEEN", password: "23/208CHM/420" },
     { username: "ISAAC", password: "23/207ACC/924" },
@@ -11,10 +12,10 @@ const users = [
     { username: "JACKSON", password: "23/208CHM/394" },
     { username: "MAAMI", password: "23/208CHM/401" },
     { username: "CHIMAOBI", password: "23/208CHM/415" },
-     { username: "HAVILAH", password: "23/208CHM/399" },
-     { username: "UMMI", password: "23/208CHM/330" },
-     { username: "MICHEAL", password: "23/207ACC/832" },
-     { username: "FELICIA", password: "1234" },
+    { username: "HAVILAH", password: "23/208CHM/399" }, // Renamed to ensure uniqueness
+    { username: "UMMI", password: "23/208CHM/330" },
+    { username: "MICHEAL", password: "23/207ACC/832" },
+    { username: "FELICIA", password: "1234" },
     { username: "SHALOM", password: "1234" },
     { username: "JOY", password: "1234" },
     { username: "ABDULRAHMAN", password: "1234" },
@@ -25,18 +26,19 @@ const users = [
     { username: "AISHA", password: "23/208CHM/350" },
     { username: "JEMILAT", password: "23/208CHM/367" },
     { username: "GOODLUCK", password: "23/208CHM/338" },
-    { username: "MICKEY", password: "23/207ACC/832" },
-    { username: "HAVILAH", password: "23/208CHM/399" },
+    { username: "BENEDICTA", password: "23/207CHM/369" }, // Renamed to ensure uniqueness
+    { username: "LOVETH", password: "23/208CHM/409" }, // Renamed to ensure uniqueness
     { username: "ABDULKADIR", password: "23/208CHM/387" },
     { username: "GERALD", password: "23/208CHM/356" },
     { username: "FAVOUR", password: "23/208CHM/359" },
     { username: "OYIZA", password: "23/208CHM/367" },
     { username: "MARY", password: "23/208CHM/385" },
-    //THE ADMIN LOG-IN INFO
-    { username: "ADMIN", password: "04926514", isAdmin: true }  // Admin account
+    // Admin account
+    { username: "ADMIN", password: "04926514", isAdmin: true }  
     // Add more users as needed
 ];
 
+// Questions array
 const questions = [
     { 
         question: "National libraries are established by?", 
@@ -291,13 +293,16 @@ const questions = [
     
 ];
 
+// Initialize variables
 let examStartTime = null;
 let currentQuestionIndex = 0;
+let selectedAnswers = {};
 
-document.getElementById('start-btn').addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent the form from refreshing the page
-    const username = document.getElementById('user-name').value;
-    const password = document.getElementById('password').value;
+// Handle Sign-In form submission
+document.getElementById('details-form').addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent form from refreshing the page
+    const username = document.getElementById('user-name').value.trim();
+    const password = document.getElementById('password').value.trim();
 
     console.log(`Username: ${username}, Password: ${password}`); // Debug log
 
@@ -306,88 +311,107 @@ document.getElementById('start-btn').addEventListener('click', (event) => {
     if (user) {
         if (user.isAdmin) {
             viewResults();  // Admin login, view all results
-        } else if (sessionStorage.getItem(username)) {
-            alert("You have already attempted the exam.");
         } else {
-            sessionStorage.setItem(username, true);
-            startExam();
+            // Check if user has already taken the exam
+            if (localStorage.getItem(`score_${username}`) !== null) {
+                alert("You have already attempted the exam.");
+            } else {
+                startExam(username);
+            }
         }
     } else {
         alert("Invalid username or password.");
     }
 });
 
-function startExam() {
-    console.log("Starting the exam"); // Debug log
+// Admin Login Button Functionality
+document.getElementById('admin-btn').addEventListener('click', () => {
+    const adminUsername = prompt("Enter admin username:");
+    const adminPassword = prompt("Enter admin password:");
+
+    const adminUser = users.find(u => u.username === adminUsername && u.password === adminPassword && u.isAdmin);
+
+    if (adminUser) {
+        viewResults(); // Show all results for admin
+    } else {
+        alert("Invalid admin credentials.");
+    }
+});
+
+// Function to start the exam
+function startExam(username) {
     examStartTime = Date.now();
     document.querySelector('.first').style.display = 'none';
+    document.getElementById('admin-btn').style.display = 'none'; // Hide admin button during exam
     const examContainer = document.getElementById('exam-container');
     examContainer.style.display = 'block';
-    renderQuestion(currentQuestionIndex);
-    startTimer(examContainer);
+    currentQuestionIndex = 0;
+    selectedAnswers = {}; // Reset selected answers
+    renderQuestion(currentQuestionIndex, username);
+    startTimer();
 }
 
-function renderQuestion(index) {
+// Function to render a question
+function renderQuestion(index, username) {
     console.log(`Rendering question ${index + 1}`); // Debug log
     const examContainer = document.getElementById('exam-container');
-    examContainer.innerHTML = `<form id="exam-form"></form>`;
-    const form = document.getElementById('exam-form');
     const q = questions[index];
 
-    form.innerHTML = `
+    examContainer.innerHTML = `
         <div>
-            <p>${index + 1}. ${q.question}</p>
-            ${q.options.map(option => `<label><input type="radio" name="q${index}" value="${option}"> ${option}</label><br>`).join('')}
+            <p><strong>Question ${index + 1} of ${questions.length}:</strong> ${q.question}</p>
+            ${q.options.map(option => 
+                `<label><input type="radio" name="q${index}" value="${option}" ${selectedAnswers[index] === option ? 'checked' : ''}> ${option}</label><br>`).join('')}
+        </div>
+        <br>
+        <div>
+            ${index > 0 ? `<button type="button" onclick="previousQuestion()">Previous</button>` : ''}
+            ${index < questions.length - 1 ? `<button type="button" onclick="nextQuestion('${username}')">Next</button>` : `<button type="button" onclick="submitExam('${username}')">Submit Exam</button>`}
         </div>
     `;
-
-    // Add Previous button only if not on the first question
-    if (index > 0) {
-        form.innerHTML += `<button type="button" onclick="previousQuestion()">Previous</button>`;
-    }
-
-    // If last question, show the submit button, otherwise show Next
-    if (index < questions.length - 1) {
-        form.innerHTML += `<button type="button" onclick="nextQuestion()">Next</button>`;
-    } else {
-        form.innerHTML += `<button type="button" onclick="submitExam()">Submit Exam</button>`;
-    }
 }
 
-function nextQuestion() {
+// Function to go to the next question
+function nextQuestion(username) {
     saveAnswer(currentQuestionIndex);
     currentQuestionIndex++;
-    renderQuestion(currentQuestionIndex);
+    renderQuestion(currentQuestionIndex, username);
 }
 
+// Function to go to the previous question
 function previousQuestion() {
     saveAnswer(currentQuestionIndex);
     currentQuestionIndex--;
-    renderQuestion(currentQuestionIndex);
+    const username = document.getElementById('user-name').value.trim();
+    renderQuestion(currentQuestionIndex, username);
 }
 
+// Function to save the selected answer
 function saveAnswer(index) {
-    const formData = new FormData(document.getElementById('exam-form'));
-    const selectedOption = formData.get(`q${index}`);
+    const selectedOption = document.querySelector(`input[name="q${index}"]:checked`);
     if (selectedOption) {
-        sessionStorage.setItem(`answer${index}`, selectedOption);
+        selectedAnswers[index] = selectedOption.value;
     }
 }
 
-function startTimer(container) {
+// Timer Logic for 30 Minutes
+function startTimer() {
     const timerElement = document.createElement('div');
     timerElement.id = 'timer';
-    container.prepend(timerElement);
+    timerElement.style.fontSize = '20px';
+    timerElement.style.marginBottom = '20px';
+    document.getElementById('exam-container').prepend(timerElement);
     updateTimer();
 }
 
+// Update Timer Every Second
 function updateTimer() {
     const now = Date.now();
     const timeElapsed = Math.floor((now - examStartTime) / 1000);
-    const timeRemaining = 30 * 60 - timeElapsed;
+    const timeRemaining = 30 * 60 - timeElapsed; // 30-minute timer
 
     if (timeRemaining <= 0) {
-        submitExam();
+        submitExam(); // Auto-submit when time runs out
         return;
     }
 
@@ -398,28 +422,35 @@ function updateTimer() {
     setTimeout(updateTimer, 1000);
 }
 
-function submitExam() {
+// Function to submit the exam
+function submitExam(username) {
+    saveAnswer(currentQuestionIndex); // Save the last answer
     let score = 0;
 
+    // Calculate score based on selected answers
     questions.forEach((q, index) => {
-        const savedAnswer = sessionStorage.getItem(`answer${index}`);
-        if (savedAnswer === q.answer) {
+        if (selectedAnswers[index] === q.answer) {
             score++;
         }
     });
 
-    const username = document.getElementById('user-name').value;
-    localStorage.setItem(username, score);
-    animateScoreDisplay(score);
+    console.log(`User: ${username}, Score: ${score}`); // Debug log
+
+    // Save the score in localStorage
+    localStorage.setItem(`score_${username}`, score);
+
+    // Display the score with animation
+    animateScoreDisplay(score, username);
 }
 
-function animateScoreDisplay(score) {
+// Function to animate score display
+function animateScoreDisplay(score, username) {
     const examContainer = document.getElementById('exam-container');
     examContainer.style.display = 'none';
 
-    const scoreContainer = document.createElement('div');
-    scoreContainer.classList.add('score-container');
-    document.body.appendChild(scoreContainer);
+    const resultsContainer = document.getElementById('results-container');
+    resultsContainer.style.display = 'block';
+    resultsContainer.innerHTML = `<h2>Your Score: <span id="animated-score">0</span> / ${questions.length}</h2>`;
 
     let currentScore = 0;
     const targetScore = score;
@@ -428,55 +459,81 @@ function animateScoreDisplay(score) {
     const scoreInterval = setInterval(() => {
         if (currentScore < targetScore) {
             currentScore++;
-            scoreContainer.innerHTML = `<h2>Your Score: ${currentScore}</h2>`;
+            document.getElementById('animated-score').textContent = currentScore;
         } else {
             clearInterval(scoreInterval);
-            setTimeout(showResults, 1000);  // Delay to show top 5 scorers
+            // Optionally, show top scorers after a delay
+            setTimeout(() => showTopFive(), 500);
         }
     }, incrementSpeed);
 }
 
-function showResults() {
-    const scoreContainer = document.querySelector('.score-container');
-    scoreContainer.style.display = 'none';
-
-    const resultsContainer = document.createElement('div');
-    document.body.appendChild(resultsContainer);
+// Function to show top five scorers
+function showTopFive() {
+    const resultsContainer = document.getElementById('results-container');
 
     const scores = [];
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
-        if (users.find(u => u.username === key && !u.isAdmin)) {
-            scores.push({ username: key, score: parseInt(localStorage.getItem(key)) });
+        if (key.startsWith('score_')) {
+            const username = key.replace('score_', '');
+            const user = users.find(u => u.username === username);
+            if (user && !user.isAdmin) {
+                scores.push({ username: username, score: parseInt(localStorage.getItem(key)) });
+            }
         }
     }
 
     scores.sort((a, b) => b.score - a.score);
 
-    resultsContainer.innerHTML = `<h2>Top 5 Scores</h2>`;
+    resultsContainer.innerHTML += `<h2>Top 5 Scores</h2>`;
+    if (scores.length === 0) {
+        resultsContainer.innerHTML += `<p>No scores available.</p>`;
+        return;
+    }
+
     scores.slice(0, 5).forEach((s, index) => {
-        resultsContainer.innerHTML += `<p>${index + 1}. ${s.username} - ${s.score}</p>`;
+        resultsContainer.innerHTML += `<p>${index + 1}. ${s.username} - ${s.score} / ${questions.length}</p>`;
     });
+
+    // Optionally, provide a button to restart or logout
+    resultsContainer.innerHTML += `<button onclick="location.reload()">Logout</button>`;
 }
 
+// Function to view all results (Admin)
 function viewResults() {
     document.querySelector('.first').style.display = 'none';
+    document.getElementById('admin-btn').style.display = 'none';
+    const examContainer = document.getElementById('exam-container');
+    examContainer.style.display = 'none';
 
-    const resultsContainer = document.createElement('div');
-    document.body.appendChild(resultsContainer);
+    const resultsContainer = document.getElementById('results-container');
+    resultsContainer.style.display = 'block';
+    resultsContainer.innerHTML = `<h2>All User Scores</h2>`;
 
     const scores = [];
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
-        if (users.find(u => u.username === key && !u.isAdmin)) {
-            scores.push({ username: key, score: parseInt(localStorage.getItem(key)) });
+        if (key.startsWith('score_')) {
+            const username = key.replace('score_', '');
+            const user = users.find(u => u.username === username);
+            if (user && !user.isAdmin) {
+                scores.push({ username: username, score: parseInt(localStorage.getItem(key)) });
+            }
         }
+    }
+
+    if (scores.length === 0) {
+        resultsContainer.innerHTML += `<p>No scores available.</p>`;
+        return;
     }
 
     scores.sort((a, b) => b.score - a.score);
 
-    resultsContainer.innerHTML = `<h2>All Scores</h2>`;
     scores.forEach((s, index) => {
-        resultsContainer.innerHTML += `<p>${index + 1}. ${s.username} - ${s.score}</p>`;
+        resultsContainer.innerHTML += `<p>${index + 1}. ${s.username} - ${s.score} / ${questions.length}</p>`;
     });
+
+    // Optionally, provide a button to logout
+    resultsContainer.innerHTML += `<button onclick="location.reload()">Logout</button>`;
 }
