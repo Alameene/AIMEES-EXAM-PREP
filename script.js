@@ -31,6 +31,7 @@ const users = [
     { username: "GERALD", password: "23/208CHM/356" },
     { username: "FAVOUR", password: "23/208CHM/359" },
     { username: "OYIZA", password: "23/208CHM/367" },
+    { username: "MARY", password: "23/208CHM/385" },
     //THE ADMIN LOG-IN INFO
     { username: "ADMIN", password: "04926514", isAdmin: true }  // Admin account
     // Add more users as needed
@@ -38,255 +39,254 @@ const users = [
 
 const questions = [
     { 
-        question: "Which library serves as a legal depository for the country?", 
-        options: ["Academic Library", "Special Library", "National Library", "Private Library"], 
-        answer: "National Library" 
-    },
-    { 
         question: "National libraries are established by?", 
         options: ["Private universities", "Special interest groups", "Federal Government", "Non-governmental organizations"], 
         answer: "Federal Government" 
     },
     { 
-        question: "Public libraries are established to perform one of these functions?", 
-        options: ["Provide information for entertainment purposes", "Discourage reading", "Publish literary journals", "Sell books"], 
-        answer: "Provide information for entertainment purposes" 
+        question: "The rules of the library are set by?", 
+        options: ["Students", "Librarians", "Federal Government", "National Council"], 
+        answer: "Librarians" 
     },
     { 
-        question: "One of the uses of a university library is to?", 
-        options: ["Provide fiction books to students", "Discourage the use of the internet", "Aid research and teaching", "Raise funds for the university"], 
-        answer: "Aid research and teaching" 
+        question: "Public libraries are established to perform which function?", 
+        options: ["Promote education", "Support businesses", "Facilitate entertainment", "Promote health awareness"], 
+        answer: "Promote education" 
     },
     { 
-        question: "How many laws were laid down for the development of libraries and information science by Ranganathan?", 
-        options: ["7", "4", "6", "5"], 
-        answer: "5" 
-    },
-    { 
-        question: "The symbol used in libraries for arranging books on the shelf is known as?", 
-        options: ["Dewey Decimal Classification", "Colour coding system", "Open shelving", "Spine mark"], 
+        question: "The classification system used by most libraries is?", 
+        options: ["Library of Congress", "Dewey Decimal Classification", "Universal Decimal Classification", "Harvard System"], 
         answer: "Dewey Decimal Classification" 
     },
     { 
-        question: "The term used to describe non-book materials kept for reading, study, and consultation is called?", 
-        options: ["Fiction books", "Reference materials", "Audio-visual materials", "Supplementary Index"], 
-        answer: "Audio-visual materials" 
+        question: "What is a call number used for in a library?", 
+        options: ["Locate a book", "Check out a book", "Reserve a book", "Borrow a book"], 
+        answer: "Locate a book" 
     },
     { 
-        question: "The term used for materials that cannot be borrowed from the library is?", 
-        options: ["Reference materials", "Reserve materials", "Fiction books", "Periodicals"], 
-        answer: "Reference materials" 
+        question: "What is an index used for in a library?", 
+        options: ["Locating journals", "Referencing authors", "Listing library rules", "Indicating where books are placed"], 
+        answer: "Locating journals" 
     },
     { 
-        question: "Which of the following is used to access information in the library?", 
-        options: ["Spine mark", "Card catalogue", "Dewey Decimal Classification", "Indexing"], 
-        answer: "Card catalogue" 
+        question: "The following items are categorized as periodicals except?", 
+        options: ["Journals", "Magazines", "Newspapers", "Textbooks"], 
+        answer: "Textbooks" 
     },
     { 
-        question: "The record that assists in the management of periodicals in the library is called?", 
-        options: ["Shelving guide", "Accession Register", "Kardex", "Catalogue card"], 
-        answer: "Kardex" 
+        question: "A library catalogue is used to?", 
+        options: ["Issue a library card", "Locate books in the library", "Reserve study rooms", "Manage library accounts"], 
+        answer: "Locate books in the library" 
     },
     { 
-        question: "Which of the following is used for shelving books in the library?", 
-        options: ["Spine mark", "Serial number", "Index number", "Reference number"], 
-        answer: "Spine mark" 
+        question: "A collection of books and materials in a specific subject area is referred to as?", 
+        options: ["General Collection", "Special Collection", "Periodical Section", "Fiction Section"], 
+        answer: "Special Collection" 
     },
     { 
-        question: "The smallest division of the library book collection is known as?", 
-        options: ["Subject heading", "Call number", "Volume", "Entry"], 
-        answer: "Call number" 
+        question: "How often are serials published?", 
+        options: ["Weekly", "Monthly", "Annually", "At regular intervals"], 
+        answer: "At regular intervals" 
     },
     { 
-        question: "The form of cataloging in which the complete works of an author are described under a single heading is called?", 
-        options: ["Union catalog", "Analytical catalog", "Collective catalog", "Author catalog"], 
-        answer: "Author catalog" 
+        question: "Which of the following is not a part of library services?", 
+        options: ["Interlibrary loans", "Providing medical advice", "Information literacy sessions", "Access to digital resources"], 
+        answer: "Providing medical advice" 
     },
     { 
-        question: "Which of the following represents the intellectual content of a book?", 
-        options: ["Publisher", "Book seller", "Author"], 
-        answer: "Author" 
+        question: "Which type of library primarily serves private organizations or companies?", 
+        options: ["Public Library", "Special Library", "National Library", "Academic Library"], 
+        answer: "Special Library" 
     },
     { 
-        question: "Copyright violations in libraries occur when?", 
-        options: ["Libraries share books for free", "Libraries duplicate works", "To punish users", "To create awareness"], 
-        answer: "Libraries duplicate works" 
+        question: "A library's reference section contains?", 
+        options: ["Books for borrowing", "Fiction materials", "Non-circulating items", "Study guides"], 
+        answer: "Non-circulating items" 
     },
     { 
-        question: "How long can laws used in the library be in effect?", 
-        options: ["20 years", "50 years", "100 years", "Indefinitely"], 
-        answer: "50 years" 
+        question: "What is the primary role of a librarian?", 
+        options: ["Issue books", "Organize books", "Assist users in locating information", "Oversee library construction"], 
+        answer: "Assist users in locating information" 
     },
     { 
-        question: "Which of these is an important factor in the classification of library materials?", 
-        options: ["Author", "Title", "Subject", "Date of Publication"], 
-        answer: "Subject" 
+        question: "Which library section contains dictionaries and encyclopedias?", 
+        options: ["Fiction Section", "Periodical Section", "Reference Section", "Special Collection"], 
+        answer: "Reference Section" 
     },
     { 
-        question: "The Dewey Decimal Classification has how many main classes?", 
-        options: ["100", "10", "50", "500"], 
-        answer: "10" 
+        question: "Which system is used to categorize books by subject in most libraries?", 
+        options: ["Congress Classification", "Dewey Decimal System", "Harvard Classification", "Numerical System"], 
+        answer: "Dewey Decimal System" 
     },
     { 
-        question: "Periodicals in the library are arranged by?", 
-        options: ["Title", "Date of publication", "Volume", "Call number"], 
-        answer: "Date of publication" 
+        question: "Which resource would you most likely use for researching journal articles?", 
+        options: ["OPAC", "Abstracts", "Periodical indexes", "Audio-visual materials"], 
+        answer: "Periodical indexes" 
     },
     { 
-        question: "An overdue notice is issued when?", 
-        options: ["A book is lost", "A book is damaged", "A book is returned late", "A book is borrowed"], 
-        answer: "A book is returned late" 
+        question: "What is a 'reserve' in a library?", 
+        options: ["Books that can be checked out for longer", "Books that cannot leave the library", "Special collection books", "Rare books"], 
+        answer: "Books that cannot leave the library" 
     },
     { 
-        question: "Which section of the library is responsible for binding of materials?", 
-        options: ["Acquisitions", "Reference", "Circulation", "Technical Services"], 
-        answer: "Technical Services" 
+        question: "The purpose of an interlibrary loan is to?", 
+        options: ["Allow access to e-books", "Borrow items from another library", "Reserve books for extended periods", "Gain access to special collections"], 
+        answer: "Borrow items from another library" 
     },
     { 
-        question: "Library fines are imposed for which of the following reasons?", 
-        options: ["Returning books early", "Returning damaged books", "Returning books late", "Damaging library property"], 
-        answer: "Returning books late" 
+        question: "Which term refers to the section of a library that archives old periodicals?", 
+        options: ["Archive", "Catalog", "Reference", "Stack"], 
+        answer: "Archive" 
     },
     { 
-        question: "A library catalogue is divided into?", 
-        options: ["Books and non-books", "Book and print", "Book and periodical", "Journals and books"], 
-        answer: "Journals and books" 
+        question: "The primary users of academic libraries are?", 
+        options: ["Students and faculty", "General public", "Private organizations", "Library staff"], 
+        answer: "Students and faculty" 
     },
     { 
-        question: "Which of the following is not an example of an electronic database?", 
-        options: ["ERIC", "AGORA", "MEDLINE", "Newspapers"], 
-        answer: "Newspapers" 
+        question: "Which of the following best describes a periodical?", 
+        options: ["Published once a year", "Published at regular intervals", "Updated monthly", "Released during library orientation"], 
+        answer: "Published at regular intervals" 
     },
     { 
-        question: "Which of these is an electronic resource in the library?", 
-        options: ["E-books", "Physical books", "Book indexes", "Card catalogues"], 
-        answer: "E-books" 
+        question: "In which section of a library would you find academic journals?", 
+        options: ["Reference Section", "Periodical Section", "Fiction Section", "Special Collection"], 
+        answer: "Periodical Section" 
     },
     { 
-        question: "Knowledge and skills acquired using electronic technology is called?", 
-        options: ["Computer literacy", "E-learning", "E-services", "Digital literacy"], 
-        answer: "Digital literacy" 
+        question: "What is an e-book?", 
+        options: ["A physical book stored electronically", "An online version of a printed book", "A special reference guide", "A rare edition of a book"], 
+        answer: "An online version of a printed book" 
     },
     { 
-        question: "The part of the library that stores manuscripts is called?", 
-        options: ["Special collections", "Reference section", "Circulation desk", "General collection"], 
-        answer: "Special collections" 
+        question: "Which tool is used to search for books available in the library?", 
+        options: ["Index", "OPAC", "Library card", "Journal"], 
+        answer: "OPAC" 
     },
     { 
-        question: "Which of these is a computerized system that allows users to locate resources?", 
-        options: ["Index", "Catalogue", "Online Public Access Catalogue (OPAC)", "Bibliography"], 
-        answer: "Online Public Access Catalogue (OPAC)" 
+        question: "Which type of library primarily serves research institutions?", 
+        options: ["Academic Library", "Public Library", "Special Library", "National Library"], 
+        answer: "Academic Library" 
     },
     { 
-        question: "The purpose of reference service in the library is?", 
-        options: ["To assist in research", "To help users find materials", "To supervise reading rooms", "To catalog books"], 
-        answer: "To help users find materials" 
+        question: "The term 'circulation' in a library refers to?", 
+        options: ["Borrowing and returning books", "Reserving study rooms", "Cataloging new books", "Archiving old journals"], 
+        answer: "Borrowing and returning books" 
     },
     { 
-        question: "Which of the following is a function of an academic library?", 
-        options: ["Provide reading materials", "Provide entertainment", "Conduct research", "Organize reading competitions"], 
-        answer: "Provide reading materials" 
+        question: "Which section of a library would hold newspapers and magazines?", 
+        options: ["Fiction Section", "Periodical Section", "Reference Section", "Special Collections"], 
+        answer: "Periodical Section" 
     },
     { 
-        question: "The term 'circulation' in libraries refers to?", 
-        options: ["Issuing and returning books", "Cataloguing books", "Binding books", "Organizing reading rooms"], 
-        answer: "Issuing and returning books" 
+        question: "The main function of a 'library catalog' is to?", 
+        options: ["List available books and resources", "Record borrowing history", "Display library hours", "Indicate overdue books"], 
+        answer: "List available books and resources" 
     },
     { 
-        question: "Which of these is the core function of a library?", 
-        options: ["Lending books", "Organizing social events", "Fundraising", "Purchasing books"], 
-        answer: "Lending books" 
+        question: "What is an abstract in academic publishing?", 
+        options: ["A full article", "A brief summary of an article", "A reference citation", "A bibliography"], 
+        answer: "A brief summary of an article" 
     },
     { 
-        question: "The person in charge of a library is known as?", 
-        options: ["Administrator", "Librarian", "Technician", "Custodian"], 
-        answer: "Librarian" 
+        question: "What is an audio-visual material in a library?", 
+        options: ["Printed books", "E-books", "Films and recordings", "Microfilm"], 
+        answer: "Films and recordings" 
     },
-        // Existing questions...
+    { 
+        question: "Which of the following is not an electronic resource?", 
+        options: ["E-journals", "E-books", "Printed textbooks", "Online databases"], 
+        answer: "Printed textbooks" 
+    },
+    { 
+        question: "A book's 'call number' typically indicates?", 
+        options: ["The location of the book on the shelf", "The due date of the book", "The publisher of the book", "The number of pages"], 
+        answer: "The location of the book on the shelf" 
+    },
+    { 
+        question: "Which term describes an academic work presented for a degree?", 
+        options: ["Thesis", "Periodical", "Catalog", "Serial"], 
+        answer: "Thesis" 
+    },
+    { 
+        question: "A library's online catalog is referred to as?", 
+        options: ["OPAC", "Index", "Serial", "Thesaurus"], 
+        answer: "OPAC" 
+    },
+    { 
+        question: "A reference book that provides synonyms and antonyms is called?", 
+        options: ["Encyclopedia", "Thesaurus", "Dictionary", "Bibliography"], 
+        answer: "Thesaurus" 
+    },
         { 
-            question: "Which of these is a function of a public library?", 
-            options: ["Provide services to the general public", "Provide materials for private companies", "Focus solely on academic research", "Sell books to the public"], 
-            answer: "Provide services to the general public" 
+            question: "Which section of the library is most suitable for retrieving peer-reviewed journal articles?", 
+            options: ["General Collection", "Periodical Section", "Reference Section", "Special Collection"], 
+            answer: "Periodical Section" 
         },
         { 
-            question: "Which section of the library is responsible for purchasing new materials?", 
-            options: ["Reference section", "Technical Services", "Circulation section", "Acquisitions"], 
-            answer: "Acquisitions" 
-        },
-        { 
-            question: "Which system is used to classify library materials by subject?", 
-            options: ["Card catalogue", "Open shelving", "Dewey Decimal System", "Serial number system"], 
-            answer: "Dewey Decimal System" 
-        },
-        { 
-            question: "Which of these is considered a non-book material?", 
-            options: ["Encyclopedias", "Journals", "DVDs", "Fiction novels"], 
-            answer: "DVDs" 
-        },
-        { 
-            question: "The term used for the computerized list of a library's collection is?", 
-            options: ["Library register", "Online Public Access Catalogue", "Book log", "Manual index"], 
-            answer: "Online Public Access Catalogue" 
-        },
-        { 
-            question: "Which section of the library handles user registrations?", 
-            options: ["Technical services", "Circulation desk", "Reference desk", "Acquisitions"], 
-            answer: "Circulation desk" 
-        },
-        { 
-            question: "The person who assists library users in locating materials is called?", 
-            options: ["Technician", "Reference librarian", "Administrator", "Supervisor"], 
-            answer: "Reference librarian" 
-        },
-        { 
-            question: "What does 'OPAC' stand for?", 
-            options: ["Online Periodicals and Catalogues", "Online Public Access Catalogue", "Offline Public Access Catalogue", "Online Private Access Catalogue"], 
-            answer: "Online Public Access Catalogue" 
-        },
-        { 
-            question: "What is the process of removing outdated or damaged materials from the library called?", 
-            options: ["Shelving", "Weeding", "Cataloguing", "Binding"], 
-            answer: "Weeding" 
-        },
-        { 
-            question: "Which of the following is a periodical publication?", 
-            options: ["Dictionary", "Journal", "Atlas", "Encyclopedia"], 
-            answer: "Journal" 
-        },
-        { 
-            question: "What type of library serves schools and educational institutions?", 
-            options: ["Public library", "National library", "School library", "Special library"], 
-            answer: "School library" 
-        },
-        { 
-            question: "The classification system that divides knowledge into ten main classes is called?", 
-            options: ["Dewey Decimal Classification", "Library of Congress Classification", "Universal Decimal Classification", "National Library Classification"], 
-            answer: "Dewey Decimal Classification" 
-        },
-        { 
-            question: "Which of the following is not a characteristic of a reference book?", 
-            options: ["Meant for short consultation", "Cannot be borrowed", "Contains current news", "Provides quick facts"], 
-            answer: "Contains current news" 
-        },
-        { 
-            question: "A database that provides abstracts and full-text scholarly articles is known as?", 
-            options: ["OPAC", "Bibliography", "Digital database", "Kardex"], 
-            answer: "Digital database" 
-        },
-        { 
-            question: "Which of these materials can only be used within the library?", 
-            options: ["Reference books", "Fiction novels", "Magazines", "DVDs"], 
-            answer: "Reference books" 
-        },
-        { 
-            question: "Which library department is responsible for indexing and abstracting journals?", 
-            options: ["Circulation", "Acquisitions", "Technical Services", "Reference"], 
-            answer: "Technical Services" 
-        },
-        { 
-            question: "The process of grouping books by subject area is called?", 
-            options: ["Cataloging", "Shelving", "Classification", "Indexing"], 
+            question: "The process of organizing materials according to subject is known as?", 
+            options: ["Indexing", "Classification", "Cataloging", "Shelving"], 
             answer: "Classification" 
+        },
+        { 
+            question: "The term ‘retrospective cataloging’ refers to?", 
+            options: ["Cataloging newly acquired books", "Cataloging materials acquired prior to the introduction of a cataloging system", "Revising previously cataloged materials", "Organizing a special collection"], 
+            answer: "Cataloging materials acquired prior to the introduction of a cataloging system" 
+        },
+        { 
+            question: "Which of the following is an online bibliographic database?", 
+            options: ["ERIC", "Thesaurus", "Dewey Decimal Classification", "Wikipedia"], 
+            answer: "ERIC" 
+        },
+        { 
+            question: "An abstracting service is most useful for?", 
+            options: ["Borrowing books", "Identifying key articles in a subject field", "Accessing special collections", "Finding out-of-print books"], 
+            answer: "Identifying key articles in a subject field" 
+        },
+        { 
+            question: "Which classification system is primarily used in medical libraries?", 
+            options: ["Dewey Decimal", "Universal Decimal", "Library of Congress", "National Library of Medicine Classification"], 
+            answer: "National Library of Medicine Classification" 
+        },
+        { 
+            question: "Which type of publication is most likely to include empirical research?", 
+            options: ["Newspapers", "Scholarly Journals", "Trade Magazines", "Popular Magazines"], 
+            answer: "Scholarly Journals" 
+        },
+        { 
+            question: "Which tool is used to organize information on authors, titles, subjects, and books in a library?", 
+            options: ["Bibliography", "Index", "Catalog", "Directory"], 
+            answer: "Catalog" 
+        },
+        { 
+            question: "In academic writing, a citation to another work that has been referenced by the author is called a?", 
+            options: ["Primary source", "Secondary source", "Tertiary source", "Footnote"], 
+            answer: "Secondary source" 
+        },
+        { 
+            question: "The term 'monograph' refers to?", 
+            options: ["A multi-volume set of books", "A detailed written study on a single specialized subject", "A journal article", "An entry in an encyclopedia"], 
+            answer: "A detailed written study on a single specialized subject" 
+        },
+        { 
+            question: "Which database is most relevant for searching psychological and behavioral science literature?", 
+            options: ["PsycINFO", "ERIC", "PubMed", "JSTOR"], 
+            answer: "PsycINFO" 
+        },
+        { 
+            question: "A 'serial' in library terminology refers to?", 
+            options: ["A book in a series", "A publication issued in parts over time", "A fiction book", "A research paper"], 
+            answer: "A publication issued in parts over time" 
+        },
+        { 
+            question: "The process of renewing a borrowed item refers to?", 
+            options: ["Recalling", "Renewing", "Reserving", "Circulating"], 
+            answer: "Renewing" 
+        },
+        { 
+            question: "In which library system are books shelved according to a number that reflects their subject matter?", 
+            options: ["Subject Shelving", "Dewey Decimal System", "Author Shelving", "Title Shelving"], 
+            answer: "Dewey Decimal System" 
         },
     
 ];
