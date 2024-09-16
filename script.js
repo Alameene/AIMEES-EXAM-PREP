@@ -41,257 +41,232 @@ const users = [
 // Questions array
 const questions = [
     { 
-        question: "National libraries are established by?", 
-        options: ["Private universities", "Special interest groups", "Federal Government", "Non-governmental organizations"], 
-        answer: "Federal Government" 
+        question: "Which ancient civilization is credited with the use of the sexagesimal number system?", 
+        options: ["Babylonians", "Egyptians", "Greeks", "Romans"], 
+        answer: "Babylonians" 
     },
     { 
-        question: "The rules of the library are set by?", 
-        options: ["Students", "Librarians", "Federal Government", "National Council"], 
-        answer: "Librarians" 
+        question: "The sexagesimal number system is based on which base number?", 
+        options: ["Base 60", "Base 12", "Base 10", "Base 20"], 
+        answer: "Base 60" 
     },
     { 
-        question: "Public libraries are established to perform which function?", 
-        options: ["Promote education", "Support businesses", "Facilitate entertainment", "Promote health awareness"], 
-        answer: "Promote education" 
+        question: "In which era did humans start using bronze tools?", 
+        options: ["Bronze Age", "Iron Age", "Stone Age", "Neolithic Age"], 
+        answer: "Bronze Age" 
     },
     { 
-        question: "The classification system used by most libraries is?", 
-        options: ["Library of Congress", "Dewey Decimal Classification", "Universal Decimal Classification", "Harvard System"], 
-        answer: "Dewey Decimal Classification" 
+        question: "Which hominid is known as the first tool maker?", 
+        options: ["Homo habilis", "Australopithecus", "Homo erectus", "Homo sapiens"], 
+        answer: "Homo habilis" 
     },
     { 
-        question: "What is a call number used for in a library?", 
-        options: ["Locate a book", "Check out a book", "Reserve a book", "Borrow a book"], 
-        answer: "Locate a book" 
+        question: "Ramapithecus is considered to belong to which evolutionary stage?", 
+        options: ["Miocene", "Pleistocene", "Oligocene", "Holocene"], 
+        answer: "Miocene" 
     },
     { 
-        question: "What is an index used for in a library?", 
-        options: ["Locating journals", "Referencing authors", "Listing library rules", "Indicating where books are placed"], 
-        answer: "Locating journals" 
+        question: "What is the main component of natural gas?", 
+        options: ["Methane", "Ethane", "Propane", "Butane"], 
+        answer: "Methane" 
     },
     { 
-        question: "The following items are categorized as periodicals except?", 
-        options: ["Journals", "Magazines", "Newspapers", "Textbooks"], 
-        answer: "Textbooks" 
+        question: "Which element is the primary component of the ozone layer?", 
+        options: ["Oxygen", "Nitrogen", "Ozone", "Hydrogen"], 
+        answer: "Ozone" 
     },
     { 
-        question: "A library catalogue is used to?", 
-        options: ["Issue a library card", "Locate books in the library", "Reserve study rooms", "Manage library accounts"], 
-        answer: "Locate books in the library" 
+        question: "The process of separating crude oil into its components is known as?", 
+        options: ["Fractional distillation", "Cracking", "Polymerization", "Combustion"], 
+        answer: "Fractional distillation" 
     },
     { 
-        question: "A collection of books and materials in a specific subject area is referred to as?", 
-        options: ["General Collection", "Special Collection", "Periodical Section", "Fiction Section"], 
-        answer: "Special Collection" 
+        question: "What type of pollution is caused by excessive nitrogen and phosphorus in water bodies?", 
+        options: ["Eutrophication", "Acid rain", "Global warming", "Thermal pollution"], 
+        answer: "Eutrophication" 
     },
     { 
-        question: "How often are serials published?", 
-        options: ["Weekly", "Monthly", "Annually", "At regular intervals"], 
-        answer: "At regular intervals" 
+        question: "Which scientist is credited with the discovery of electrons?", 
+        options: ["J.J. Thomson", "Ernest Rutherford", "Niels Bohr", "Albert Einstein"], 
+        answer: "J.J. Thomson" 
     },
     { 
-        question: "Which of the following is not a part of library services?", 
-        options: ["Interlibrary loans", "Providing medical advice", "Information literacy sessions", "Access to digital resources"], 
-        answer: "Providing medical advice" 
+        question: "Which particle has a negative charge?", 
+        options: ["Electron", "Proton", "Neutron", "Photon"], 
+        answer: "Electron" 
     },
     { 
-        question: "Which type of library primarily serves private organizations or companies?", 
-        options: ["Public Library", "Special Library", "National Library", "Academic Library"], 
-        answer: "Special Library" 
+        question: "What is the mass number of an atom with 6 protons and 7 neutrons?", 
+        options: ["13", "12", "14", "7"], 
+        answer: "13" 
     },
     { 
-        question: "A library's reference section contains?", 
-        options: ["Books for borrowing", "Fiction materials", "Non-circulating items", "Study guides"], 
-        answer: "Non-circulating items" 
+        question: "Which gas is primarily responsible for the greenhouse effect?", 
+        options: ["Carbon dioxide", "Methane", "Nitrogen", "Oxygen"], 
+        answer: "Carbon dioxide" 
     },
     { 
-        question: "What is the primary role of a librarian?", 
-        options: ["Issue books", "Organize books", "Assist users in locating information", "Oversee library construction"], 
-        answer: "Assist users in locating information" 
+        question: "Which gas forms the protective ozone layer in the atmosphere?", 
+        options: ["Ozone", "Carbon dioxide", "Nitrogen", "Methane"], 
+        answer: "Ozone" 
     },
     { 
-        question: "Which library section contains dictionaries and encyclopedias?", 
-        options: ["Fiction Section", "Periodical Section", "Reference Section", "Special Collection"], 
-        answer: "Reference Section" 
+        question: "The Paleolithic Age is also known as the?", 
+        options: ["Old Stone Age", "Middle Stone Age", "Bronze Age", "New Stone Age"], 
+        answer: "Old Stone Age" 
     },
     { 
-        question: "Which system is used to categorize books by subject in most libraries?", 
-        options: ["Congress Classification", "Dewey Decimal System", "Harvard Classification", "Numerical System"], 
-        answer: "Dewey Decimal System" 
+        question: "What is the main mineral resource found in Jos Plateau, Nigeria?", 
+        options: ["Tin", "Gold", "Coal", "Limestone"], 
+        answer: "Tin" 
     },
     { 
-        question: "Which resource would you most likely use for researching journal articles?", 
-        options: ["OPAC", "Abstracts", "Periodical indexes", "Audio-visual materials"], 
-        answer: "Periodical indexes" 
+        question: "What is the fundamental unit of life?", 
+        options: ["Cell", "Atom", "Molecule", "Organism"], 
+        answer: "Cell" 
     },
     { 
-        question: "What is a 'reserve' in a library?", 
-        options: ["Books that can be checked out for longer", "Books that cannot leave the library", "Special collection books", "Rare books"], 
-        answer: "Books that cannot leave the library" 
+        question: "Which of the following elements is NOT a noble gas?", 
+        options: ["Oxygen", "Neon", "Helium", "Argon"], 
+        answer: "Oxygen" 
     },
     { 
-        question: "The purpose of an interlibrary loan is to?", 
-        options: ["Allow access to e-books", "Borrow items from another library", "Reserve books for extended periods", "Gain access to special collections"], 
-        answer: "Borrow items from another library" 
+        question: "Which form of radiation is most harmful to living tissues?", 
+        options: ["Gamma rays", "Microwaves", "Radio waves", "Infrared"], 
+        answer: "Gamma rays" 
     },
     { 
-        question: "Which term refers to the section of a library that archives old periodicals?", 
-        options: ["Archive", "Catalog", "Reference", "Stack"], 
-        answer: "Archive" 
+        question: "Which human ancestor is associated with the first use of fire?", 
+        options: ["Homo erectus", "Homo habilis", "Australopithecus", "Homo sapiens"], 
+        answer: "Homo erectus" 
     },
     { 
-        question: "The primary users of academic libraries are?", 
-        options: ["Students and faculty", "General public", "Private organizations", "Library staff"], 
-        answer: "Students and faculty" 
+        question: "The Mesolithic period is also referred to as the?", 
+        options: ["Middle Stone Age", "New Stone Age", "Old Stone Age", "Bronze Age"], 
+        answer: "Middle Stone Age" 
     },
     { 
-        question: "Which of the following best describes a periodical?", 
-        options: ["Published once a year", "Published at regular intervals", "Updated monthly", "Released during library orientation"], 
-        answer: "Published at regular intervals" 
+        question: "Which layer of the Earth is responsible for the greenhouse effect?", 
+        options: ["Atmosphere", "Mantle", "Core", "Lithosphere"], 
+        answer: "Atmosphere" 
     },
     { 
-        question: "In which section of a library would you find academic journals?", 
-        options: ["Reference Section", "Periodical Section", "Fiction Section", "Special Collection"], 
-        answer: "Periodical Section" 
+        question: "What is the term used to describe organisms that obtain energy from inorganic substances?", 
+        options: ["Chemotrophs", "Phototrophs", "Heterotrophs", "Autotrophs"], 
+        answer: "Chemotrophs" 
     },
     { 
-        question: "What is an e-book?", 
-        options: ["A physical book stored electronically", "An online version of a printed book", "A special reference guide", "A rare edition of a book"], 
-        answer: "An online version of a printed book" 
+        question: "The process of converting natural resources into finished products is known as?", 
+        options: ["Industrialization", "Fractionation", "Polymerization", "Manufacturing"], 
+        answer: "Manufacturing" 
     },
     { 
-        question: "Which tool is used to search for books available in the library?", 
-        options: ["Index", "OPAC", "Library card", "Journal"], 
-        answer: "OPAC" 
+        question: "The ability of the atmosphere to retain heat is largely due to the presence of which gas?", 
+        options: ["Water vapor", "Oxygen", "Nitrogen", "Methane"], 
+        answer: "Water vapor" 
     },
     { 
-        question: "Which type of library primarily serves research institutions?", 
-        options: ["Academic Library", "Public Library", "Special Library", "National Library"], 
-        answer: "Academic Library" 
+        question: "Which stage in human evolution is associated with bipedalism?", 
+        options: ["Australopithecus", "Homo sapiens", "Homo erectus", "Homo habilis"], 
+        answer: "Australopithecus" 
     },
     { 
-        question: "The term 'circulation' in a library refers to?", 
-        options: ["Borrowing and returning books", "Reserving study rooms", "Cataloging new books", "Archiving old journals"], 
-        answer: "Borrowing and returning books" 
+        question: "Which human ancestor is associated with the development of stone tools?", 
+        options: ["Homo habilis", "Homo sapiens", "Homo erectus", "Neanderthals"], 
+        answer: "Homo habilis" 
     },
     { 
-        question: "Which section of a library would hold newspapers and magazines?", 
-        options: ["Fiction Section", "Periodical Section", "Reference Section", "Special Collections"], 
-        answer: "Periodical Section" 
+        question: "Which scientist proposed the model of the atom where electrons orbit the nucleus?", 
+        options: ["Niels Bohr", "Ernest Rutherford", "J.J. Thomson", "James Chadwick"], 
+        answer: "Niels Bohr" 
     },
     { 
-        question: "The main function of a 'library catalog' is to?", 
-        options: ["List available books and resources", "Record borrowing history", "Display library hours", "Indicate overdue books"], 
-        answer: "List available books and resources" 
+        question: "Which gas is a major contributor to acid rain?", 
+        options: ["Sulfur dioxide", "Carbon monoxide", "Methane", "Nitrogen"], 
+        answer: "Sulfur dioxide" 
     },
     { 
-        question: "What is an abstract in academic publishing?", 
-        options: ["A full article", "A brief summary of an article", "A reference citation", "A bibliography"], 
-        answer: "A brief summary of an article" 
+        question: "What is the energy transformation in photosynthesis?", 
+        options: ["Light to chemical", "Chemical to thermal", "Mechanical to electrical", "Electrical to light"], 
+        answer: "Light to chemical" 
     },
     { 
-        question: "What is an audio-visual material in a library?", 
-        options: ["Printed books", "E-books", "Films and recordings", "Microfilm"], 
-        answer: "Films and recordings" 
+        question: "The majority of Earth's atmosphere is composed of which gas?", 
+        options: ["Nitrogen", "Oxygen", "Carbon dioxide", "Argon"], 
+        answer: "Nitrogen" 
     },
     { 
-        question: "Which of the following is not an electronic resource?", 
-        options: ["E-journals", "E-books", "Printed textbooks", "Online databases"], 
-        answer: "Printed textbooks" 
+        question: "Which of the following is not a mineral resource in Nigeria?", 
+        options: ["Diamonds", "Coal", "Limestone", "Tin"], 
+        answer: "Diamonds" 
     },
     { 
-        question: "A book's 'call number' typically indicates?", 
-        options: ["The location of the book on the shelf", "The due date of the book", "The publisher of the book", "The number of pages"], 
-        answer: "The location of the book on the shelf" 
+        question: "Who discovered the neutron?", 
+        options: ["James Chadwick", "J.J. Thomson", "Ernest Rutherford", "Niels Bohr"], 
+        answer: "James Chadwick" 
     },
     { 
-        question: "Which term describes an academic work presented for a degree?", 
-        options: ["Thesis", "Periodical", "Catalog", "Serial"], 
-        answer: "Thesis" 
+        question: "What percentage of Earth's surface is covered by water?", 
+        options: ["71%", "60%", "45%", "85%"], 
+        answer: "71%" 
     },
     { 
-        question: "A library's online catalog is referred to as?", 
-        options: ["OPAC", "Index", "Serial", "Thesaurus"], 
-        answer: "OPAC" 
+        question: "Which process is used to convert nitrogen gas from the atmosphere into ammonia?", 
+        options: ["Nitrogen fixation", "Nitrification", "Ammonification", "Denitrification"], 
+        answer: "Nitrogen fixation" 
     },
     { 
-        question: "A reference book that provides synonyms and antonyms is called?", 
-        options: ["Encyclopedia", "Thesaurus", "Dictionary", "Bibliography"], 
-        answer: "Thesaurus" 
+        question: "What is the primary cause of the greenhouse effect?", 
+        options: ["Increased levels of greenhouse gases", "Deforestation", "Volcanic eruptions", "Ocean acidification"], 
+        answer: "Increased levels of greenhouse gases" 
     },
-        { 
-            question: "Which section of the library is most suitable for retrieving peer-reviewed journal articles?", 
-            options: ["General Collection", "Periodical Section", "Reference Section", "Special Collection"], 
-            answer: "Periodical Section" 
-        },
-        { 
-            question: "The process of organizing materials according to subject is known as?", 
-            options: ["Indexing", "Classification", "Cataloging", "Shelving"], 
-            answer: "Classification" 
-        },
-        { 
-            question: "The term ‘retrospective cataloging’ refers to?", 
-            options: ["Cataloging newly acquired books", "Cataloging materials acquired prior to the introduction of a cataloging system", "Revising previously cataloged materials", "Organizing a special collection"], 
-            answer: "Cataloging materials acquired prior to the introduction of a cataloging system" 
-        },
-        { 
-            question: "Which of the following is an online bibliographic database?", 
-            options: ["ERIC", "Thesaurus", "Dewey Decimal Classification", "Wikipedia"], 
-            answer: "ERIC" 
-        },
-        { 
-            question: "An abstracting service is most useful for?", 
-            options: ["Borrowing books", "Identifying key articles in a subject field", "Accessing special collections", "Finding out-of-print books"], 
-            answer: "Identifying key articles in a subject field" 
-        },
-        { 
-            question: "Which classification system is primarily used in medical libraries?", 
-            options: ["Dewey Decimal", "Universal Decimal", "Library of Congress", "National Library of Medicine Classification"], 
-            answer: "National Library of Medicine Classification" 
-        },
-        { 
-            question: "Which type of publication is most likely to include empirical research?", 
-            options: ["Newspapers", "Scholarly Journals", "Trade Magazines", "Popular Magazines"], 
-            answer: "Scholarly Journals" 
-        },
-        { 
-            question: "Which tool is used to organize information on authors, titles, subjects, and books in a library?", 
-            options: ["Bibliography", "Index", "Catalog", "Directory"], 
-            answer: "Catalog" 
-        },
-        { 
-            question: "In academic writing, a citation to another work that has been referenced by the author is called a?", 
-            options: ["Primary source", "Secondary source", "Tertiary source", "Footnote"], 
-            answer: "Secondary source" 
-        },
-        { 
-            question: "The term 'monograph' refers to?", 
-            options: ["A multi-volume set of books", "A detailed written study on a single specialized subject", "A journal article", "An entry in an encyclopedia"], 
-            answer: "A detailed written study on a single specialized subject" 
-        },
-        { 
-            question: "Which database is most relevant for searching psychological and behavioral science literature?", 
-            options: ["PsycINFO", "ERIC", "PubMed", "JSTOR"], 
-            answer: "PsycINFO" 
-        },
-        { 
-            question: "A 'serial' in library terminology refers to?", 
-            options: ["A book in a series", "A publication issued in parts over time", "A fiction book", "A research paper"], 
-            answer: "A publication issued in parts over time" 
-        },
-        { 
-            question: "The process of renewing a borrowed item refers to?", 
-            options: ["Recalling", "Renewing", "Reserving", "Circulating"], 
-            answer: "Renewing" 
-        },
-        { 
-            question: "In which library system are books shelved according to a number that reflects their subject matter?", 
-            options: ["Subject Shelving", "Dewey Decimal System", "Author Shelving", "Title Shelving"], 
-            answer: "Dewey Decimal System" 
-        },
-    
+    { 
+        question: "Which tool was primarily used during the Paleolithic Age?", 
+        options: ["Stone tools", "Iron tools", "Bronze tools", "Wooden tools"], 
+        answer: "Stone tools" 
+    },
+    { 
+        question: "Which element has the highest atomic number?", 
+        options: ["Uranium", "Lead", "Plutonium", "Gold"], 
+        answer: "Uranium" 
+    },
+    { 
+        question: "Which layer of Earth's atmosphere contains the ozone layer?", 
+        options: ["Stratosphere", "Troposphere", "Mesosphere", "Thermosphere"], 
+        answer: "Stratosphere" 
+    },
+    { 
+        question: "Which of the following is an example of renewable energy?", 
+        options: ["Solar power", "Coal", "Natural gas", "Petroleum"], 
+        answer: "Solar power" 
+    },
+    { 
+        question: "Which of the following is the best method to reduce acid rain?", 
+        options: ["Using renewable energy sources", "Increasing the use of coal", "Cutting down trees", "Building more factories"], 
+        answer: "Using renewable energy sources" 
+    },
+    { 
+        question: "The age of the Earth is estimated to be about?", 
+        options: ["4.5 billion years", "6,000 years", "3 million years", "1 billion years"], 
+        answer: "4.5 billion years" 
+    },
+    { 
+        question: "Which mineral resource is abundant in Enugu, Nigeria?", 
+        options: ["Coal", "Gold", "Tin", "Iron ore"], 
+        answer: "Coal" 
+    },
+    { 
+        question: "Which fossil fuel is mainly used in transportation?", 
+        options: ["Petroleum", "Coal", "Natural gas", "Uranium"], 
+        answer: "Petroleum" 
+    },
+    { 
+        question: "Which planet in the solar system has the most moons?", 
+        options: ["Jupiter", "Saturn", "Mars", "Earth"], 
+        answer: "Jupiter" 
+    }
 ];
+
 
 // Initialize variables
 let examStartTime = null;
@@ -466,6 +441,33 @@ function animateScoreDisplay(score, username) {
             setTimeout(() => showTopFive(), 500);
         }
     }, incrementSpeed);
+
+
+ // Hide the exam container and show the results container
+ document.getElementById('exam-container').style.display = 'none';
+ displayCorrectAnswers(score);
+}
+
+// Function to display correct answers and feedback
+function displayCorrectAnswers(score) {
+ const resultsContainer = document.getElementById('results-container');
+ resultsContainer.style.display = 'block'; // Show results container
+ resultsContainer.innerHTML = `<h2>Your Score: ${score} / ${questions.length}</h2>`;
+
+ // Display question-by-question feedback
+ resultsContainer.innerHTML += `<h3>Correct Answers:</h3>`;
+ questions.forEach((q, index) => {
+     const userAnswer = selectedAnswers[index] || "No answer selected";
+     const isCorrect = userAnswer === q.answer;
+     resultsContainer.innerHTML += `
+         <div style="margin-bottom: 10px;">
+             <strong>Question ${index + 1}:</strong> ${q.question}<br>
+             <span>Your answer: <strong style="color: ${isCorrect ? 'white' : 'red'};">${userAnswer}</strong></span><br>
+             ${isCorrect ? `<span style="color: yellow;">Correct!</span>` : `<span style="color: red;">Correct answer: ${q.answer}</span>`}
+         </div>
+     `;
+ });
+
 }
 
 // Function to show top five scorers
