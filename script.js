@@ -41,6 +41,191 @@ const users = [
 // Questions array
 const questions = [
     { 
+        question: "Which civilization is credited with the development of the first written legal code, known as the Code of Hammurabi?", 
+        options: ["Babylonians", "Egyptians", "Sumerians", "Assyrians"], 
+        answer: "Babylonians" 
+    },
+    { 
+        question: "The concept of zero was first used by which civilization?", 
+        options: ["Babylonians", "Greeks", "Indians", "Romans"], 
+        answer: "Indians" 
+    },
+    { 
+        question: "In which era did humans first start creating tools from iron?", 
+        options: ["Iron Age", "Bronze Age", "Stone Age", "Neolithic Age"], 
+        answer: "Iron Age" 
+    },
+    { 
+        question: "Which hominid species is believed to have created the earliest known cave paintings?", 
+        options: ["Homo sapiens", "Neanderthals", "Homo habilis", "Homo erectus"], 
+        answer: "Homo sapiens" 
+    },
+    { 
+        question: "Which human ancestor is believed to be the first to migrate out of Africa?", 
+        options: ["Homo erectus", "Homo habilis", "Australopithecus", "Neanderthals"], 
+        answer: "Homo erectus" 
+    },
+    { 
+        question: "The first evidence of Homo sapiens appears during which period?", 
+        options: ["Upper Paleolithic", "Lower Paleolithic", "Mesolithic", "Neolithic"], 
+        answer: "Upper Paleolithic" 
+    },
+    { 
+        question: "Which gas in the Earth's atmosphere is the second most abundant?", 
+        options: ["Oxygen", "Nitrogen", "Carbon dioxide", "Argon"], 
+        answer: "Oxygen" 
+    },
+    { 
+        question: "What is the primary cause of acid rain?", 
+        options: ["Sulfur dioxide", "Carbon dioxide", "Methane", "Ozone"], 
+        answer: "Sulfur dioxide" 
+    },
+    { 
+        question: "Which type of radiation has the shortest wavelength?", 
+        options: ["Gamma rays", "X-rays", "Ultraviolet light", "Infrared light"], 
+        answer: "Gamma rays" 
+    },
+    { 
+        question: "In which layer of the Earth's atmosphere does weather primarily occur?", 
+        options: ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"], 
+        answer: "Troposphere" 
+    },
+    { 
+        question: "Which period in human history marks the transition from hunter-gatherer societies to settled agricultural communities?", 
+        options: ["Neolithic Revolution", "Mesolithic Period", "Bronze Age", "Iron Age"], 
+        answer: "Neolithic Revolution" 
+    },
+    { 
+        question: "Which scientist first proposed the theory that electrons exist in quantized energy levels?", 
+        options: ["Niels Bohr", "Ernest Rutherford", "J.J. Thomson", "Max Planck"], 
+        answer: "Niels Bohr" 
+    },
+    { 
+        question: "Which process involves the removal of sulfur from fossil fuels to reduce air pollution?", 
+        options: ["Desulfurization", "Fractional distillation", "Cracking", "Polymerization"], 
+        answer: "Desulfurization" 
+    },
+    { 
+        question: "Which period is characterized by the use of tools made from both stone and bronze?", 
+        options: ["Chalcolithic", "Paleolithic", "Mesolithic", "Neolithic"], 
+        answer: "Chalcolithic" 
+    },
+    { 
+        question: "The greenhouse effect is primarily caused by which of the following?", 
+        options: ["Greenhouse gases", "Ozone depletion", "Acid rain", "Global cooling"], 
+        answer: "Greenhouse gases" 
+    },
+    { 
+        question: "Which component of petroleum is primarily used as fuel for airplanes?", 
+        options: ["Kerosene", "Gasoline", "Diesel", "Natural gas"], 
+        answer: "Kerosene" 
+    },
+    { 
+        question: "Which radioactive isotope is commonly used in the carbon dating of archaeological artifacts?", 
+        options: ["Carbon-14", "Uranium-238", "Potassium-40", "Thorium-232"], 
+        answer: "Carbon-14" 
+    },
+    { 
+        question: "Which period marks the beginning of recorded human history?", 
+        options: ["Bronze Age", "Iron Age", "Paleolithic Age", "Neolithic Age"], 
+        answer: "Bronze Age" 
+    },
+    { 
+        question: "The isotope Uranium-235 is commonly used in which type of process?", 
+        options: ["Nuclear fission", "Nuclear fusion", "Radiocarbon dating", "Photosynthesis"], 
+        answer: "Nuclear fission" 
+    },
+    { 
+        question: "Which gas is most responsible for global warming?", 
+        options: ["Carbon dioxide", "Nitrogen", "Oxygen", "Argon"], 
+        answer: "Carbon dioxide" 
+    },
+    { 
+        question: "Which human species is most closely related to Homo sapiens?", 
+        options: ["Neanderthals", "Homo habilis", "Australopithecus", "Homo erectus"], 
+        answer: "Neanderthals" 
+    },
+    { 
+        question: "The Cretaceous-Paleogene extinction event is widely believed to have been caused by?", 
+        options: ["Asteroid impact", "Volcanic eruptions", "Ice age", "Climate change"], 
+        answer: "Asteroid impact" 
+    },
+    { 
+        question: "The atomic number of an element is determined by the number of?", 
+        options: ["Protons", "Neutrons", "Electrons", "Isotopes"], 
+        answer: "Protons" 
+    },
+    { 
+        question: "The Neolithic period is known for the development of?", 
+        options: ["Agriculture", "Iron tools", "Cave paintings", "Bronze tools"], 
+        answer: "Agriculture" 
+    },
+    { 
+        question: "Which type of fossil fuel is the most abundant in Nigeria?", 
+        options: ["Natural gas", "Coal", "Petroleum", "Limestone"], 
+        answer: "Petroleum" 
+    },
+    { 
+        question: "The Earth's atmosphere is primarily composed of which two gases?", 
+        options: ["Nitrogen and Oxygen", "Oxygen and Carbon Dioxide", "Nitrogen and Carbon Dioxide", "Oxygen and Argon"], 
+        answer: "Nitrogen and Oxygen" 
+    },
+    { 
+        question: "Which era is known for the emergence of Homo sapiens?", 
+        options: ["Pleistocene", "Holocene", "Oligocene", "Miocene"], 
+        answer: "Pleistocene" 
+    },
+    { 
+        question: "Which mineral resource is mined in the Jos Plateau region of Nigeria?", 
+        options: ["Tin", "Coal", "Gold", "Limestone"], 
+        answer: "Tin" 
+    },
+    { 
+        question: "Which element is commonly used in the production of batteries?", 
+        options: ["Lithium", "Iron", "Lead", "Nickel"], 
+        answer: "Lithium" 
+    },
+    { 
+        question: "Which form of nitrogen is most readily absorbed by plants?", 
+        options: ["Nitrates", "Ammonia", "Nitrites", "Nitrogen gas"], 
+        answer: "Nitrates" 
+    },
+    { 
+        question: "In which layer of the Earth's atmosphere does the ozone layer exist?", 
+        options: ["Stratosphere", "Troposphere", "Mesosphere", "Thermosphere"], 
+        answer: "Stratosphere" 
+    },
+    { 
+        question: "Which hominid species is believed to have used the earliest known stone tools?", 
+        options: ["Homo habilis", "Australopithecus", "Homo erectus", "Neanderthals"], 
+        answer: "Homo habilis" 
+    },
+    { 
+        question: "The main component of natural gas is?", 
+        options: ["Methane", "Ethane", "Propane", "Butane"], 
+        answer: "Methane" 
+    },
+    { 
+        question: "Which stage of the Stone Age is known for the use of microliths?", 
+        options: ["Mesolithic", "Paleolithic", "Neolithic", "Chalcolithic"], 
+        answer: "Mesolithic" 
+    },
+    { 
+        question: "Which of the following gases is released during the combustion of fossil fuels?", 
+        options: ["Carbon dioxide", "Nitrogen", "Oxygen", "Argon"], 
+        answer: "Carbon dioxide" 
+    },
+    { 
+        question: "What is the chemical formula for methane?", 
+        options: ["CH₄", "C₂H₆", "C₃H₈", "CO₂"], 
+        answer: "CH₄" 
+    },
+  ];
+    
+     
+
+/**const questions = [
+    { 
         question: "Which ancient civilization is credited with the use of the sexagesimal number system?", 
         options: ["Babylonians", "Egyptians", "Greeks", "Romans"], 
         answer: "Babylonians" 
@@ -265,7 +450,7 @@ const questions = [
         options: ["Jupiter", "Saturn", "Mars", "Earth"], 
         answer: "Jupiter" 
     }
-];
+];*/
 
 
 // Initialize variables
