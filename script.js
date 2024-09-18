@@ -214,13 +214,113 @@ const questions = [
         question: "Which of the following gases is released during the combustion of fossil fuels?", 
         options: ["Carbon dioxide", "Nitrogen", "Oxygen", "Argon"], 
         answer: "Carbon dioxide" 
+    }, 
+    { 
+        question: "The discovery of fire is attributed to which human ancestor?", 
+        options: ["Homo erectus", "Homo habilis", "Australopithecus", "Neanderthals"], 
+        answer: "Homo erectus" 
     },
     { 
-        question: "What is the chemical formula for methane?", 
-        options: ["CH₄", "C₂H₆", "C₃H₈", "CO₂"], 
-        answer: "CH₄" 
+        question: "Which metal was first used by humans for tool-making?", 
+        options: ["Copper", "Iron", "Bronze", "Gold"], 
+        answer: "Copper" 
     },
-  ];
+    { 
+        question: "Which type of rock is formed through the solidification of molten magma?", 
+        options: ["Igneous rock", "Sedimentary rock", "Metamorphic rock", "Limestone"], 
+        answer: "Igneous rock" 
+    },
+    { 
+        question: "Which gas is primarily responsible for the depletion of the ozone layer?", 
+        options: ["Chlorofluorocarbons (CFCs)", "Carbon dioxide", "Methane", "Nitrogen oxides"], 
+        answer: "Chlorofluorocarbons (CFCs)" 
+    },
+    { 
+        question: "In which part of Nigeria are the majority of the country’s limestone deposits found?", 
+        options: ["Southwest", "North-central", "Southeast", "Northeast"], 
+        answer: "North-central" 
+    },
+    { 
+        question: "Which era marks the introduction of bronze tools?", 
+        options: ["Bronze Age", "Iron Age", "Neolithic Age", "Paleolithic Age"], 
+        answer: "Bronze Age" 
+    },
+    { 
+        question: "Which hominid species is known for developing advanced stone tools and controlling fire?", 
+        options: ["Neanderthals", "Homo erectus", "Homo habilis", "Australopithecus"], 
+        answer: "Homo erectus" 
+    },
+    { 
+        question: "Which process is used to separate petroleum into its components?", 
+        options: ["Fractional distillation", "Cracking", "Polymerization", "Condensation"], 
+        answer: "Fractional distillation" 
+    },
+    { 
+        question: "The splitting of an atom into two smaller nuclei, releasing energy, is known as?", 
+        options: ["Nuclear fission", "Nuclear fusion", "Radioactive decay", "Ionization"], 
+        answer: "Nuclear fission" 
+    },
+    { 
+        question: "Which region in Nigeria is most known for tin mining?", 
+        options: ["Jos Plateau", "Niger Delta", "Ogun State", "Cross River State"], 
+        answer: "Jos Plateau" 
+    },
+    { 
+        question: "Which element has the highest atomic number that is still naturally occurring?", 
+        options: ["Uranium", "Plutonium", "Thorium", "Lead"], 
+        answer: "Uranium" 
+    },
+    { 
+        question: "The Paleolithic period is primarily characterized by which of the following?", 
+        options: ["Hunter-gatherer societies", "Agricultural communities", "Use of iron tools", "Written language"], 
+        answer: "Hunter-gatherer societies" 
+    },
+    { 
+        question: "The formation of petroleum begins with the decomposition of?", 
+        options: ["Marine microorganisms", "Plant matter", "Limestone deposits", "Igneous rocks"], 
+        answer: "Marine microorganisms" 
+    },
+    { 
+        question: "Which of the following gases does not contribute significantly to global warming?", 
+        options: ["Nitrogen", "Carbon dioxide", "Methane", "Nitrous oxide"], 
+        answer: "Nitrogen" 
+    },
+    { 
+        question: "Which type of fossil is most commonly used to determine the age of a sedimentary rock layer?", 
+        options: ["Index fossil", "Body fossil", "Trace fossil", "Molecular fossil"], 
+        answer: "Index fossil" 
+    },
+    { 
+        question: "Which mineral resource is primarily extracted in Nigeria’s Niger Delta?", 
+        options: ["Petroleum", "Coal", "Tin", "Gold"], 
+        answer: "Petroleum" 
+    },
+    { 
+        question: "In which layer of the Earth’s atmosphere does the ionosphere reside?", 
+        options: ["Thermosphere", "Stratosphere", "Troposphere", "Mesosphere"], 
+        answer: "Thermosphere" 
+    },
+    { 
+        question: "Which is the lightest of the three fundamental subatomic particles?", 
+        options: ["Electron", "Proton", "Neutron", "Photon"], 
+        answer: "Electron" 
+    },
+    { 
+        question: "Which form of radiation is most harmful to human tissues?", 
+        options: ["Gamma rays", "Alpha particles", "Beta particles", "Ultraviolet light"], 
+        answer: "Gamma rays" 
+    },
+    { 
+        question: "Which of the following is a primary source of lead pollution?", 
+        options: ["Lead-based paints", "Natural gas", "Solar panels", "Hydroelectric dams"], 
+        answer: "Lead-based paints" 
+    },
+    { 
+        question: "Which gas is used as a shielding gas in welding and other high-temperature processes?", 
+        options: ["Argon", "Oxygen", "Nitrogen", "Carbon dioxide"], 
+        answer: "Argon" 
+    }
+];
     
      
 
