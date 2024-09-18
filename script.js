@@ -34,6 +34,7 @@ const users = [
     { username: "OYIZA", password: "23/208CHM/367" },
     { username: "MARY", password: "23/208CHM/385" },
     { username: "PESH", password: "23/208CHM/411" },
+    { username: "SARAH", password: "23/208CHM/413" },
     // Admin account
     { username: "ADMIN", password: "04926514", isAdmin: true }  
     // Add more users as needed
