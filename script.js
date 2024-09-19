@@ -279,6 +279,21 @@ const questions = [
         question: "Which of the following is an example of a modal verb?",
         options: ["Can", "Run", "Beautiful", "Quickly"],
         answer: "Can"
+    },
+    {
+        question: "Which rhetorical device involves the use of a word or phrase at the beginning of successive clauses or sentences for emphasis?",
+        options: ["Anaphora", "Metonymy", "Antithesis", "Synecdoche"],
+        answer: "Anaphora"
+    },
+    {
+        question: "What term is used to describe a sentence where the main idea is delayed until the end?",
+        options: ["Periodic sentence", "Loose sentence", "Balanced sentence", "Compound sentence"],
+        answer: "Periodic sentence"
+    },
+    {
+        question: "Which linguistic concept refers to the omission of parts of a sentence that are implied by context, often indicated by three dots?",
+        options: ["Ellipsis", "Zeugma", "Litotes", "Chiasmus"],
+        answer: "Ellipsis"
     }
 ];
 
