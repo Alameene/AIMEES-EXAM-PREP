@@ -493,7 +493,7 @@ function displayCorrectAnswers(score) {
      resultsContainer.innerHTML += `
          <div style="margin-bottom: 10px;">
              <strong>Question ${index + 1}:</strong> ${q.question}<br>
-             <span>Your answer: <strong style="color: ${isCorrect ? 'white' : 'red'};">${userAnswer}</strong></span><br>
+             <span>Your answer: <strong style="color: ${isCorrect ? 'green' : 'red'};">${userAnswer}</strong></span><br>
              ${isCorrect ? `<span style="color: green;">Correct!</span>` : `<span style="color: red;">Correct answer: ${q.answer}</span>`}
          </div>
      `;
