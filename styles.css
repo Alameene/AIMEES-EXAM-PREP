@@ -100,3 +100,19 @@ input{
     background: linear-gradient( rgba(228, 16, 16, 0.897),rgba(50, 253, 32, 0.911));
     border-radius: 5px;
 }
+
+#results-container {
+    max-height: 80vh; /* Prevent the container from growing too tall */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.result-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+
