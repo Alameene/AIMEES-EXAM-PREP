@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCIENCE AND SOCIETY</title>
+    <title>Library Exam Portal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,8 +12,9 @@
             <tr height="35pt" class="flow">
                 <td>
                     <marquee behavior="" direction="">
-                        Welcome to the practice test for GST 104, SCIENCE AND SOCIETY, do well to score above thirty,
-                        questions shall be renewed in the next 10 hours
+                        Welcome to the practice test of GST 101B, this is just a prototype of the main
+                        exam, created by AIMEES WD....Any idea or modification to how the site can be 
+                        modified can be sent to our whtasapp @09132252381
                     </marquee>
                 </td>
             </tr>
@@ -41,13 +42,18 @@
             </tr>
         </table>
     </div>
-    
+
+    <!-- The exam content will be injected into this container after sign-in -->
     <div id="exam-container" style="display: none;">
-        <!-- Exam content will be injected here by JavaScript -->
+        <h2 id="question"></h2>
+        <div id="options"></div>
+        <button id="nextBtn" onclick="nextQuestion()">Next</button>
+        <button id="submitBtn" style="display: none;" onclick="submitExam()">Submit</button>
     </div>
-    <div id="results-container" style="display: none;">
-        <!-- Results will be displayed here -->
-    </div>
+
+    <!-- The results will be displayed in this container after exam submission -->
+    <div id="results-container" style="display: none;"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
