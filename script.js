@@ -26,7 +26,7 @@ const users = [
     { username: "AISHA", password: "23/208CHM/350" },
     { username: "JEMILAT", password: "23/208CHM/367" },
     { username: "GOODLUCK", password: "23/208CHM/338" },
-    { username: "BENEDICTA", password: "23/207CHM/369" }, // Renamed to ensure uniqueness
+    { username: "BENEDICTA", password: "23/208CHM/369" }, // Renamed to ensure uniqueness
     { username: "LOVETH", password: "23/208CHM/409" }, // Renamed to ensure uniqueness
     { username: "ABDULKADIR", password: "23/208CHM/387" },
     { username: "GERALD", password: "23/208CHM/356" },
@@ -36,6 +36,8 @@ const users = [
     { username: "PESH", password: "23/208CHM/411" },
     { username: "SARAH", password: "23/208CHM/413" },
     { username: "NGOZI", password: "23/208CHM/343" },
+    { username: "DANIEL", password: "23/208CHM/291" },
+    { username: "ANGEL", password: "23/208CHM/366" },
     { username: "GUEST", password: "0000" },
     { username: "GUEST-II", password: "1111" },
     // Admin account
@@ -46,256 +48,257 @@ const users = [
 // Questions array
 const questions = [
     {
-        question: "Which conjunction is used to introduce a conditional clause?",
-        options: ["if", "but", "so", "when"],
-        answer: "if"
+        question: "Which grammatical structure involves combining two independent clauses without a conjunction?",
+        options: ["Comma splice", "Subordinate clause", "Run-on sentence", "Complex sentence"],
+        answer: "Comma splice"
     },
     {
-        question: "What term refers to the act of placing side by side to compare or contrast?",
-        options: ["Juxtaposition", "Alliteration", "Hyperbole", "Oxymoron"],
-        answer: "Juxtaposition"
-    },
-    {
-        question: "Which punctuation mark is used to separate clauses in a complex sentence?",
-        options: ["Comma", "Full stop", "Colon", "Semi-colon"],
-        answer: "Semi-colon"
-    },
-    {
-        question: "What figure of speech involves the repetition of the same consonant sound at the beginning of words?",
-        options: ["Alliteration", "Simile", "Metaphor", "Personification"],
-        answer: "Alliteration"
-    },
-    {
-        question: "Which type of sentence expresses a command or request?",
-        options: ["Imperative", "Declarative", "Interrogative", "Exclamatory"],
-        answer: "Imperative"
-    },
-    {
-        question: "Which is the correct auxiliary verb in the sentence: 'She _____ finished the project by tomorrow'?",
-        options: ["will have", "is", "will", "was"],
-        answer: "will have"
-    },
-    {
-        question: "Which form of the verb 'to be' is used in the sentence: 'The results _____ surprising'?",
-        options: ["are", "was", "is", "were"],
-        answer: "are"
-    },
-    {
-        question: "Which punctuation is used to indicate possession?",
-        options: ["Apostrophe", "Semi-colon", "Hyphen", "Comma"],
-        answer: "Apostrophe"
-    },
-    {
-        question: "What is the term for a clause that cannot stand alone as a complete sentence?",
-        options: ["Dependent clause", "Independent clause", "Simple sentence", "Complex sentence"],
-        answer: "Dependent clause"
-    },
-    {
-        question: "Which term refers to the repetition of similar vowel sounds within words?",
-        options: ["Assonance", "Consonance", "Alliteration", "Onomatopoeia"],
-        answer: "Assonance"
-    },
-    {
-        question: "What is a word that modifies a noun called?",
-        options: ["Adjective", "Adverb", "Preposition", "Conjunction"],
-        answer: "Adjective"
-    },
-    {
-        question: "What is the grammatical term for the subject's action or state in a sentence?",
-        options: ["Predicate", "Subject", "Object", "Adverb"],
-        answer: "Predicate"
-    },
-    {
-        question: "Which of the following is not a coordinating conjunction?",
-        options: ["Although", "But", "And", "Or"],
-        answer: "Although"
-    },
-    {
-        question: "In a compound sentence, which of the following is used to join two independent clauses?",
-        options: ["Conjunction", "Comma", "Semicolon", "Colon"],
+        question: "What is the term for a word that connects clauses or sentences, such as 'and', 'but', or 'or'?",
+        options: ["Conjunction", "Preposition", "Article", "Interjection"],
         answer: "Conjunction"
     },
     {
-        question: "What is the correct verb form in the sentence: 'She has been _____ since morning'?",
-        options: ["working", "worked", "work", "works"],
-        answer: "working"
-    },
-    {
-        question: "Which type of sentence asks a question?",
-        options: ["Interrogative", "Imperative", "Declarative", "Exclamatory"],
-        answer: "Interrogative"
-    },
-    {
-        question: "Which punctuation mark is used to indicate an abrupt break or pause in a sentence?",
-        options: ["Dash", "Hyphen", "Comma", "Colon"],
-        answer: "Dash"
-    },
-    {
-        question: "What is the grammatical term for the use of two negatives in a sentence to express a positive meaning?",
-        options: ["Double negative", "Affirmative", "Paradox", "Hyperbole"],
-        answer: "Double negative"
-    },
-    {
-        question: "Which part of speech expresses an action or state of being?",
-        options: ["Verb", "Noun", "Adjective", "Pronoun"],
-        answer: "Verb"
-    },
-    {
-        question: "What type of sentence makes a statement?",
+        question: "What is the type of sentence that makes a statement or 'declares' something?",
         options: ["Declarative", "Interrogative", "Imperative", "Exclamatory"],
         answer: "Declarative"
     },
     {
-        question: "Which punctuation mark is used to introduce a list or explanation?",
-        options: ["Colon", "Comma", "Semi-colon", "Apostrophe"],
-        answer: "Colon"
+        question: "Which term refers to a noun or pronoun that follows another noun to rename or identify it?",
+        options: ["Appositive", "Gerund", "Participle", "Infinitive"],
+        answer: "Appositive"
     },
     {
-        question: "What is the term for a word that takes the place of a noun?",
-        options: ["Pronoun", "Verb", "Adjective", "Preposition"],
-        answer: "Pronoun"
+        question: "What is the function of the word 'although' in the sentence 'Although he was tired, he kept working'?",
+        options: ["Subordinating conjunction", "Coordinating conjunction", "Adverb", "Preposition"],
+        answer: "Subordinating conjunction"
     },
     {
-        question: "Which of the following is an example of an indefinite article?",
-        options: ["A", "The", "This", "That"],
-        answer: "A"
+        question: "Which part of speech connects a noun to another word, usually indicating location or time?",
+        options: ["Preposition", "Conjunction", "Article", "Interjection"],
+        answer: "Preposition"
     },
     {
-        question: "In which type of sentence does the subject perform the action expressed by the verb?",
-        options: ["Active voice", "Passive voice", "Imperative sentence", "Interrogative sentence"],
-        answer: "Active voice"
+        question: "Which sentence type expresses strong emotion and ends with an exclamation mark?",
+        options: ["Exclamatory", "Imperative", "Declarative", "Interrogative"],
+        answer: "Exclamatory"
     },
     {
-        question: "Which of the following is a determiner?",
-        options: ["Each", "Run", "Quickly", "On"],
-        answer: "Each"
+        question: "What type of conjunction pairs with another to join equal sentence elements, like 'either...or'?",
+        options: ["Correlative conjunction", "Subordinating conjunction", "Coordinating conjunction", "Interjection"],
+        answer: "Correlative conjunction"
     },
     {
-        question: "Which term refers to the verb form that functions as a noun?",
-        options: ["Gerund", "Participle", "Infinitive", "Adverb"],
-        answer: "Gerund"
+        question: "Which tense is used to describe an action that was ongoing in the past, like 'I was reading'?",
+        options: ["Past continuous", "Present perfect", "Simple past", "Future continuous"],
+        answer: "Past continuous"
     },
     {
-        question: "What is the term for a group of words that has a subject and a verb but cannot stand alone as a sentence?",
-        options: ["Dependent clause", "Independent clause", "Phrase", "Gerund"],
-        answer: "Dependent clause"
+        question: "What type of verb shows an action that happened before another action in the past?",
+        options: ["Past perfect", "Present perfect", "Past continuous", "Future perfect"],
+        answer: "Past perfect"
     },
     {
-        question: "Which of the following is a correlative conjunction?",
-        options: ["Either...or", "Although", "But", "And"],
-        answer: "Either...or"
+        question: "Which term describes the voice where the subject receives the action of the verb?",
+        options: ["Passive voice", "Active voice", "Conditional voice", "Imperative voice"],
+        answer: "Passive voice"
     },
     {
-        question: "Which of the following sentences is in passive voice?",
-        options: ["The cake was eaten by John.", "John ate the cake.", "The cake is delicious.", "John will eat the cake."],
-        answer: "The cake was eaten by John."
-    },
-    {
-        question: "Which term refers to a verb form used to indicate an action that is hypothetical or not factual?",
-        options: ["Subjunctive", "Indicative", "Imperative", "Conditional"],
-        answer: "Subjunctive"
-    },
-    {
-        question: "Which conjunction introduces a subordinate clause?",
-        options: ["Although", "And", "But", "Or"],
-        answer: "Although"
-    },
-    {
-        question: "What is the correct form of the verb in the sentence: 'If I _____ a car, I would drive you to work'?",
-        options: ["had", "have", "has", "will have"],
-        answer: "had"
-    },
-    {
-        question: "Which of the following is an example of a transitive verb?",
-        options: ["Eat", "Run", "Sleep", "Laugh"],
-        answer: "Eat"
-    },
-    {
-        question: "What is the grammatical term for a word that links two clauses together?",
-        options: ["Conjunction", "Preposition", "Adjective", "Verb"],
-        answer: "Conjunction"
-    },
-    {
-        question: "Which term refers to a word that modifies a verb, an adjective, or another adverb?",
-        options: ["Adverb", "Adjective", "Conjunction", "Preposition"],
-        answer: "Adverb"
-    },
-    {
-        question: "Which punctuation mark is used to enclose additional information in a sentence?",
-        options: ["Parentheses", "Comma", "Colon", "Dash"],
-        answer: "Parentheses"
-    },
-    {
-        question: "Which type of clause can function as a sentence by itself?",
-        options: ["Independent clause", "Dependent clause", "Relative clause", "Adjective clause"],
-        answer: "Independent clause"
-    },
-    {
-        question: "Which term describes the omission of conjunctions between clauses in a sentence?",
-        options: ["Asyndeton", "Polysyndeton", "Ellipsis", "Anaphora"],
-        answer: "Asyndeton"
-    },
-    {
-        question: "Which word in the sentence 'The quick brown fox jumps over the lazy dog' is the adjective?",
-        options: ["Quick", "Jumps", "Dog", "Over"],
-        answer: "Quick"
-    },
-    {
-        question: "Which of the following is a collective noun?",
-        options: ["Team", "Cat", "Quickly", "Under"],
-        answer: "Team"
-    },
-    {
-        question: "Which punctuation mark is used to separate items in a list?",
-        options: ["Comma", "Period", "Exclamation mark", "Colon"],
-        answer: "Comma"
-    },
-    {
-        question: "Which of the following is an example of a countable noun?",
-        options: ["Book", "Water", "Sugar", "Advice"],
-        answer: "Book"
-    },
-    {
-        question: "Which type of sentence is used to give orders or instructions?",
+        question: "Which type of sentence is used to give commands or make requests?",
         options: ["Imperative", "Declarative", "Interrogative", "Exclamatory"],
         answer: "Imperative"
     },
     {
-        question: "Which of the following is a reflexive pronoun?",
-        options: ["Myself", "I", "Me", "You"],
-        answer: "Myself"
+        question: "Which part of speech modifies a noun or pronoun, usually providing more detail?",
+        options: ["Adjective", "Adverb", "Verb", "Preposition"],
+        answer: "Adjective"
     },
     {
-        question: "Which term refers to a phrase that renames or provides more information about a noun?",
-        options: ["Appositive", "Gerund", "Infinitive", "Clause"],
+        question: "Which sentence component expresses the main action or state of being?",
+        options: ["Verb", "Noun", "Adverb", "Adjective"],
+        answer: "Verb"
+    },
+    {
+        question: "Which term refers to a word or phrase that means the opposite of another word?",
+        options: ["Antonym", "Synonym", "Homonym", "Homophone"],
+        answer: "Antonym"
+    },
+    {
+        question: "Which punctuation mark is used to separate independent clauses joined by a coordinating conjunction?",
+        options: ["Comma", "Semicolon", "Colon", "Period"],
+        answer: "Comma"
+    },
+    {
+        question: "What is the role of the word 'quickly' in the sentence 'She ran quickly to catch the bus'?",
+        options: ["Adverb", "Adjective", "Verb", "Preposition"],
+        answer: "Adverb"
+    },
+    {
+        question: "What type of clause contains both a subject and a predicate but cannot stand alone as a complete sentence?",
+        options: ["Subordinate clause", "Independent clause", "Main clause", "Relative clause"],
+        answer: "Subordinate clause"
+    },
+    {
+        question: "Which punctuation mark is used to introduce a list, quotation, or explanation?",
+        options: ["Colon", "Comma", "Semicolon", "Dash"],
+        answer: "Colon"
+    },
+    {
+        question: "What term is used to describe the repetition of similar sounds at the beginning of words?",
+        options: ["Alliteration", "Assonance", "Consonance", "Onomatopoeia"],
+        answer: "Alliteration"
+    },
+    {
+        question: "What is the grammatical term for words like 'and', 'but', and 'or' that join words or clauses?",
+        options: ["Conjunctions", "Prepositions", "Adverbs", "Interjections"],
+        answer: "Conjunctions"
+    },
+    {
+        question: "Which term refers to a verb form that functions as a noun and ends in '-ing'?",
+        options: ["Gerund", "Participle", "Infinitive", "Appositive"],
+        answer: "Gerund"
+    },
+    {
+        question: "What is the term for the mood of a verb used to express a command or request?",
+        options: ["Imperative mood", "Indicative mood", "Subjunctive mood", "Interrogative mood"],
+        answer: "Imperative mood"
+    },
+    {
+        question: "What is the difference between 'affect' and 'effect'?",
+        options: ["'Affect' is a verb, and 'effect' is a noun", "'Affect' is a noun, and 'effect' is a verb", "They are synonyms", "They are homophones"],
+        answer: "'Affect' is a verb, and 'effect' is a noun"
+    },
+    {
+        question: "Which punctuation mark is used to join two independent clauses without a conjunction?",
+        options: ["Semicolon", "Colon", "Comma", "Dash"],
+        answer: "Semicolon"
+    },
+    {
+        question: "Which part of speech shows the relationship between a noun and another word in the sentence?",
+        options: ["Preposition", "Conjunction", "Interjection", "Article"],
+        answer: "Preposition"
+    },
+    {
+        question: "What type of verb helps the main verb in a sentence express tense, mood, or voice?",
+        options: ["Auxiliary verb", "Modal verb", "Action verb", "Linking verb"],
+        answer: "Auxiliary verb"
+    },
+    {
+        question: "Which term describes a word that modifies a verb, adjective, or other adverb?",
+        options: ["Adverb", "Adjective", "Preposition", "Conjunction"],
+        answer: "Adverb"
+    },
+    {
+        question: "Which grammatical term refers to a phrase that renames or identifies a noun?",
+        options: ["Appositive", "Participle", "Gerund", "Infinitive"],
         answer: "Appositive"
     },
     {
-        question: "Which type of sentence contains an independent clause and at least one dependent clause?",
-        options: ["Complex sentence", "Simple sentence", "Compound sentence", "Compound-complex sentence"],
+        question: "What is the term for the voice where the subject performs the action of the verb?",
+        options: ["Active voice", "Passive voice", "Conditional voice", "Imperative voice"],
+        answer: "Active voice"
+    },
+    {
+        question: "Which part of a sentence expresses who or what performs the action?",
+        options: ["Subject", "Predicate", "Object", "Complement"],
+        answer: "Subject"
+    },
+    {
+        question: "What term refers to an adjective or phrase that follows a linking verb and describes the subject?",
+        options: ["Predicate adjective", "Direct object", "Adverbial clause", "Participle"],
+        answer: "Predicate adjective"
+    },
+    {
+        question: "What is the term for a verb form that functions as an adjective and often ends in '-ing' or '-ed'?",
+        options: ["Participle", "Gerund", "Infinitive", "Appositive"],
+        answer: "Participle"
+    },
+    {
+        question: "What is the grammatical function of the word 'quickly' in the sentence 'He quickly finished the exam'?",
+        options: ["Adverb", "Adjective", "Verb", "Preposition"],
+        answer: "Adverb"
+    },
+    {
+        question: "What is the role of a conjunction in a sentence?",
+        options: ["To connect words, phrases, or clauses", "To modify a noun", "To express action", "To show possession"],
+        answer: "To connect words, phrases, or clauses"
+    },
+    {
+        question: "Which type of sentence structure contains one independent clause and one or more subordinate clauses?",
+        options: ["Complex sentence", "Compound sentence", "Simple sentence", "Run-on sentence"],
         answer: "Complex sentence"
     },
     {
-        question: "Which of the following is an example of a modal verb?",
-        options: ["Can", "Run", "Beautiful", "Quickly"],
-        answer: "Can"
+        question: "Which term refers to the base form of a verb, often preceded by 'to'?",
+        options: ["Infinitive", "Gerund", "Participle", "Subjunctive"],
+        answer: "Infinitive"
     },
     {
-        question: "Which rhetorical device involves the use of a word or phrase at the beginning of successive clauses or sentences for emphasis?",
-        options: ["Anaphora", "Metonymy", "Antithesis", "Synecdoche"],
-        answer: "Anaphora"
+        question: "Which sentence type is used to ask a question?",
+        options: ["Interrogative", "Declarative", "Imperative", "Exclamatory"],
+        answer: "Interrogative"
     },
     {
-        question: "What term is used to describe a sentence where the main idea is delayed until the end?",
-        options: ["Periodic sentence", "Loose sentence", "Balanced sentence", "Compound sentence"],
-        answer: "Periodic sentence"
+        question: "Which grammatical mood is used to express hypothetical or contrary-to-fact situations?",
+        options: ["Subjunctive", "Indicative", "Imperative", "Interrogative"],
+        answer: "Subjunctive"
     },
     {
-        question: "Which linguistic concept refers to the omission of parts of a sentence that are implied by context, often indicated by three dots?",
-        options: ["Ellipsis", "Zeugma", "Litotes", "Chiasmus"],
+        question: "What is the grammatical function of the word 'it' in the sentence 'It is raining'?",
+        options: ["Dummy subject", "Direct object", "Predicate", "Infinitive"],
+        answer: "Dummy subject"
+    },
+    {
+        question: "What term refers to a group of words with a subject and a verb that expresses a complete thought?",
+        options: ["Independent clause", "Subordinate clause", "Phrase", "Appositive"],
+        answer: "Independent clause"
+    },
+    {
+        question: "Which type of verb expresses possibility, necessity, or permission?",
+        options: ["Modal verb", "Auxiliary verb", "Action verb", "Linking verb"],
+        answer: "Modal verb"
+    },
+    {
+        question: "Which term describes the repetition of similar vowel sounds within words in close proximity?",
+        options: ["Assonance", "Alliteration", "Consonance", "Onomatopoeia"],
+        answer: "Assonance"
+    },
+    {
+        question: "What is the role of a predicate in a sentence?",
+        options: ["It expresses the action or state of being", "It renames the subject", "It shows the relationship between words", "It modifies the subject"],
+        answer: "It expresses the action or state of being"
+    },
+    {
+        question: "What is the grammatical function of a subject complement?",
+        options: ["It follows a linking verb and describes or renames the subject", "It connects clauses in a sentence", "It expresses an action", "It modifies a verb"],
+        answer: "It follows a linking verb and describes or renames the subject"
+    },
+    {
+        question: "Which term refers to the word or phrase that receives the action of a transitive verb?",
+        options: ["Direct object", "Indirect object", "Subject", "Predicate"],
+        answer: "Direct object"
+    },
+    {
+        question: "Which punctuation mark is used to indicate the omission of one or more words in a sentence?",
+        options: ["Ellipsis", "Dash", "Comma", "Semicolon"],
         answer: "Ellipsis"
+    },
+    {
+        question: "What is the term for a sentence fragment that lacks either a subject or a verb, making it incomplete?",
+        options: ["Sentence fragment", "Run-on sentence", "Comma splice", "Complex sentence"],
+        answer: "Sentence fragment"
+    },
+    {
+        question: "Which type of modifier incorrectly appears far from the word it describes, leading to confusion?",
+        options: ["Dangling modifier", "Misplaced modifier", "Appositive", "Infinitive"],
+        answer: "Misplaced modifier"
+    },
+    {
+        question: "What is the name of the punctuation mark used to indicate direct speech or a quotation?",
+        options: ["Quotation marks", "Parentheses", "Colon", "Apostrophe"],
+        answer: "Quotation marks"
     }
 ];
+
 
 
 
@@ -493,7 +496,7 @@ function displayCorrectAnswers(score) {
      resultsContainer.innerHTML += `
          <div style="margin-bottom: 10px;">
              <strong>Question ${index + 1}:</strong> ${q.question}<br>
-             <span>Your answer: <strong style="color: ${isCorrect ? 'green' : 'red'};">${userAnswer}</strong></span><br>
+             <span>Your answer: <strong style="color: ${isCorrect ? 'white' : 'red'};">${userAnswer}</strong></span><br>
              ${isCorrect ? `<span style="color: green;">Correct!</span>` : `<span style="color: red;">Correct answer: ${q.answer}</span>`}
          </div>
      `;
