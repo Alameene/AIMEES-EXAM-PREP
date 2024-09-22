@@ -49,272 +49,361 @@ const users = [
 // Questions array
 const questions = [
     {
-        question: "What is the primary function of a semicolon in a sentence?",
-        options: ["To connect independent clauses", "To indicate a pause", "To introduce a list", "To separate items in a series"],
-        answer: "To connect independent clauses"
+        question: "What is the term for a verb that expresses an action directed toward a person or thing?",
+        options: ["Intransitive verb", "Transitive verb", "Linking verb", "Auxiliary verb"],
+        answer: "Transitive verb"
     },
     {
-        question: "Which type of sentence expresses a command or request?",
-        options: ["Interrogative", "Declarative", "Exclamatory", "Imperative"],
-        answer: "Imperative"
+        question: "Which of the following sentences contains a dangling modifier?",
+        options: [
+            "Walking down the street, the flowers were blooming.",
+            "I walked down the street while the flowers were blooming.",
+            "As I walked down the street, I saw the flowers blooming.",
+            "The flowers were blooming as I walked down the street."
+        ],
+        answer: "Walking down the street, the flowers were blooming."
     },
     {
-        question: "What term describes a word that has the same or nearly the same meaning as another word?",
-        options: ["Antonym", "Synonym", "Homonym", "Prefix"],
-        answer: "Synonym"
+        question: "What is the difference between a simile and a metaphor?",
+        options: [
+            "A simile compares two things using 'like' or 'as', while a metaphor does not.",
+            "A metaphor compares two things using 'like' or 'as', while a simile does not.",
+            "A simile describes a metaphor.",
+            "There is no difference."
+        ],
+        answer: "A simile compares two things using 'like' or 'as', while a metaphor does not."
     },
     {
-        question: "What is the purpose of an exclamation point in a sentence?",
-        options: ["To indicate a question", "To show strong emotion", "To connect clauses", "To list items"],
-        answer: "To show strong emotion"
+        question: "What do we call a verb form that acts as an adjective?",
+        options: ["Gerund", "Infinitive", "Participle", "Adverb"],
+        answer: "Participle"
     },
     {
-        question: "Which of the following is an example of a compound sentence?",
-        options: ["She likes tea.", "She likes tea, and he likes coffee.", "Although she likes tea, she drinks coffee.", "She drinks coffee."],
-        answer: "She likes tea, and he likes coffee."
-    },
-    {
-        question: "What do we call the introductory words or phrases that provide context in a sentence?",
-        options: ["Modifiers", "Prepositional phrases", "Adverbials", "Subordinate clauses"],
-        answer: "Adverbials"
-    },
-    {
-        question: "Which punctuation mark is used to indicate a pause stronger than a comma but weaker than a period?",
-        options: ["Semicolon", "Colon", "Comma", "Dash"],
-        answer: "Semicolon"
-    },
-    {
-        question: "What is a complex sentence?",
-        options: ["A sentence with one independent clause and one or more dependent clauses", "A sentence with two independent clauses", "A sentence that is very long", "A simple sentence with added details"],
-        answer: "A sentence with one independent clause and one or more dependent clauses"
-    },
-    {
-        question: "What do we call the part of the sentence that tells who or what the sentence is about?",
-        options: ["Predicate", "Object", "Subject", "Complement"],
-        answer: "Subject"
-    },
-    {
-        question: "What is the term for a word or phrase that describes the subject of a sentence?",
-        options: ["Modifier", "Subject complement", "Predicate adjective", "Adverb"],
-        answer: "Modifier"
-    },
-    {
-        question: "Which type of clause can stand alone as a complete sentence?",
-        options: ["Dependent clause", "Independent clause", "Relative clause", "Adverbial clause"],
-        answer: "Independent clause"
-    },
-    {
-        question: "What is the function of a conjunction in a sentence?",
-        options: ["To connect words or groups of words", "To indicate a question", "To express strong feelings", "To provide additional information"],
-        answer: "To connect words or groups of words"
-    },
-    {
-        question: "What do we call the specific word or group of words that the subject of a sentence performs the action on?",
-        options: ["Object", "Predicate", "Subject", "Complement"],
-        answer: "Object"
-    },
-    {
-        question: "What is an interrogative sentence?",
-        options: ["A sentence that asks a question", "A sentence that makes a statement", "A sentence that gives a command", "A sentence that expresses excitement"],
-        answer: "A sentence that asks a question"
-    },
-    {
-        question: "What do we call an adjective that modifies a noun in a specific way?",
-        options: ["Predicate adjective", "Descriptive adjective", "Limiting adjective", "Compound adjective"],
-        answer: "Limiting adjective"
+        question: "Which of the following is an example of a fused sentence?",
+        options: [
+            "I went to the store, I bought apples.",
+            "I went to the store; I bought apples.",
+            "I went to the store I bought apples.",
+            "I went to the store and bought apples."
+        ],
+        answer: "I went to the store I bought apples."
     },
     {
         question: "What is a gerund?",
-        options: ["A verb form ending in -ing that functions as a noun", "A verb form used in the past tense", "A type of adjective", "A conjunction"],
-        answer: "A verb form ending in -ing that functions as a noun"
-    },
-    {
-        question: "Which of the following is a misplaced modifier?",
-        options: ["She quickly ran to the store.", "He saw a dog on the way to the park.", "The man with the hat walked his dog.", "The man walked his dog in a hurry."],
-        answer: "The man with the hat walked his dog."
-    },
-    {
-        question: "What is a dangling modifier?",
-        options: ["A modifier that does not clearly connect to the word it describes", "A modifier placed at the end of the sentence", "A modifier that is too long", "A modifier that uses too many adjectives"],
-        answer: "A modifier that does not clearly connect to the word it describes"
-    },
-    {
-        question: "What is the term for a verb that shows the subject's action or state of being?",
-        options: ["Linking verb", "Action verb", "Transitive verb", "Intransitive verb"],
-        answer: "Action verb"
-    },
-    {
-        question: "What is a prepositional phrase?",
-        options: ["A group of words that begins with a preposition and ends with a noun", "A phrase that shows action", "A type of subordinate clause", "A group of words without a subject"],
-        answer: "A group of words that begins with a preposition and ends with a noun"
-    },
-    {
-        question: "What do we call the main idea of a sentence, typically found in the predicate?",
-        options: ["Subject", "Verb", "Object", "Predicate"],
-        answer: "Predicate"
-    },
-    {
-        question: "Which punctuation mark is used before a list of items?",
-        options: ["Comma", "Semicolon", "Colon", "Period"],
-        answer: "Colon"
-    },
-    {
-        question: "What is the function of a relative clause in a sentence?",
-        options: ["To provide additional information about a noun", "To ask a question", "To express a command", "To connect two independent clauses"],
-        answer: "To provide additional information about a noun"
-    },
-    {
-        question: "What type of noun refers to a general category rather than a specific instance?",
-        options: ["Proper noun", "Common noun", "Collective noun", "Abstract noun"],
-        answer: "Common noun"
-    },
-    {
-        question: "What is an oxymoron?",
-        options: ["A figure of speech that combines contradictory terms", "A statement that is clearly false", "A type of analogy", "A type of metaphor"],
-        answer: "A figure of speech that combines contradictory terms"
-    },
-    {
-        question: "Which of the following is an example of an adverb?",
-        options: ["Quickly", "Car", "Happy", "Beautiful"],
-        answer: "Quickly"
-    },
-    {
-        question: "What do we call a sentence that uses a subject and a verb to express a complete thought?",
-        options: ["Compound sentence", "Complex sentence", "Simple sentence", "Run-on sentence"],
-        answer: "Simple sentence"
-    },
-    {
-        question: "Which type of narrative perspective uses 'I' or 'we'?",
-        options: ["Second-person", "Third-person", "First-person", "Omniscient"],
-        answer: "First-person"
-    },
-    {
-        question: "What is the purpose of a thesis statement?",
-        options: ["To summarize the main points of an essay", "To introduce a new topic", "To provide evidence", "To present a specific argument"],
-        answer: "To present a specific argument"
-    },
-    {
-        question: "What is the term for a comparison between two unlike things using 'like' or 'as'?",
-        options: ["Metaphor", "Simile", "Alliteration", "Hyperbole"],
-        answer: "Simile"
-    },
-    {
-        question: "Which of the following is a compound-complex sentence?",
-        options: ["Although it was raining, I went for a walk and met a friend.", "I enjoy reading books.", "She loves music, but she doesn't play any instruments.", "He is tall."],
-        answer: "Although it was raining, I went for a walk and met a friend."
-    },
-    {
-        question: "What do we call the central idea or theme in a piece of literature?",
-        options: ["Plot", "Setting", "Motif", "Message"],
-        answer: "Message"
-    },
-    {
-        question: "What is an anecdote?",
-        options: ["A short personal story used to illustrate a point", "A summary of a book", "A character's inner thoughts", "A description of a setting"],
-        answer: "A short personal story used to illustrate a point"
-    },
-    {
-        question: "Which type of literary device involves the repetition of initial consonant sounds?",
-        options: ["Alliteration", "Onomatopoeia", "Assonance", "Imagery"],
-        answer: "Alliteration"
-    },
-    {
-        question: "What is the main purpose of a persuasive essay?",
-        options: ["To inform the reader", "To entertain the reader", "To convince the reader of a particular viewpoint", "To describe a person or place"],
-        answer: "To convince the reader of a particular viewpoint"
-    },
-     {
-        question: "Which sentence is an example of passive voice?",
-        options: ["She baked a cake.", "The cake was baked by her.", "She is baking a cake.", "She will bake a cake."],
-        answer: "The cake was baked by her."
-    },
-    {
-        question: "What is the term for a sentence that combines two or more independent clauses without proper punctuation?",
-        options: ["Complex sentence", "Fragment", "Run-on sentence", "Compound sentence"],
-        answer: "Run-on sentence"
-    },
-    {
-        question: "What is the function of a subordinating conjunction?",
-        options: ["To connect independent clauses", "To introduce a dependent clause", "To join two verbs", "To modify a noun"],
-        answer: "To introduce a dependent clause"
-    },
-    {
-        question: "Which of the following is an example of a coordinating conjunction?",
-        options: ["However", "And", "Although", "Because"],
-        answer: "And"
-    },
-    {
-        question: "What do we call a word that takes the place of a noun in a sentence?",
-        options: ["Verb", "Adverb", "Pronoun", "Adjective"],
-        answer: "Pronoun"
-    },
-    {
-        question: "What is the difference between a phrase and a clause?",
         options: [
-            "A phrase has a subject and a verb, while a clause does not.",
-            "A clause has a subject and a verb, while a phrase does not.",
-            "A phrase expresses a complete thought, while a clause does not.",
-            "There is no difference."
+            "A verb form used as an adjective",
+            "A noun formed from a verb ending in -ing",
+            "A verb form used to express an action",
+            "A verb that describes a state of being"
         ],
-        answer: "A clause has a subject and a verb, while a phrase does not."
+        answer: "A noun formed from a verb ending in -ing"
     },
     {
-        question: "Which of the following is an example of an interjection?",
-        options: ["Wow!", "Run", "Quickly", "Under"],
-        answer: "Wow!"
-    },
-    {
-        question: "Which sentence is in the future perfect tense?",
+        question: "Which of the following sentences uses an incorrect verb tense?",
         options: [
-            "She will be playing the piano.",
-            "She has played the piano.",
-            "She will have played the piano.",
-            "She plays the piano."
+            "She has been waiting for an hour.",
+            "He had already left when she arrived.",
+            "I will finish the project last week.",
+            "They are planning to visit tomorrow."
         ],
-        answer: "She will have played the piano."
+        answer: "I will finish the project last week."
     },
     {
-        question: "What is the function of a demonstrative pronoun?",
-        options: ["To indicate proximity to the speaker", "To introduce a dependent clause", "To show possession", "To modify an adjective"],
-        answer: "To indicate proximity to the speaker"
-    },
-    {
-        question: "Which punctuation mark is used to separate items in a list?",
-        options: ["Colon", "Semicolon", "Comma", "Period"],
-        answer: "Comma"
-    },
-    {
-        question: "Which of the following is an example of a reflexive pronoun?",
-        options: ["Hers", "Themselves", "He", "Their"],
-        answer: "Themselves"
-    },
-    {
-        question: "Which of the following is a correct example of subject-verb agreement?",
+        question: "What is a split infinitive?",
         options: [
-            "The dogs runs fast.",
-            "The cat run fast.",
-            "The dog run fast.",
-            "The dog runs fast."
+            "An infinitive that is interrupted by another word",
+            "A verb phrase that uses two infinitives",
+            "An infinitive that comes at the beginning of a sentence",
+            "An infinitive that follows a preposition"
         ],
-        answer: "The dog runs fast."
+        answer: "An infinitive that is interrupted by another word"
     },
     {
-        question: "What is the term for a noun that represents a group of people or things?",
-        options: ["Proper noun", "Abstract noun", "Collective noun", "Concrete noun"],
-        answer: "Collective noun"
+        question: "What is the function of an adverbial clause?",
+        options: [
+            "To modify a verb, adjective, or another adverb",
+            "To connect two independent clauses",
+            "To introduce a noun clause",
+            "To replace a noun or pronoun"
+        ],
+        answer: "To modify a verb, adjective, or another adverb"
     },
     {
-        question: "What do we call the mood of a verb that expresses a wish, suggestion, or hypothetical situation?",
-        options: ["Indicative", "Imperative", "Interrogative", "Subjunctive"],
-        answer: "Subjunctive"
+        question: "Which of the following sentences is an example of a compound-complex sentence?",
+        options: [
+            "I went to the store, and I bought milk.",
+            "Because it was raining, I stayed inside.",
+            "I went to the store, and because it was raining, I bought an umbrella.",
+            "I love reading books."
+        ],
+        answer: "I went to the store, and because it was raining, I bought an umbrella."
     },
     {
-        question: "What is the correct past tense form of the verb 'to fly'?",
-        options: ["Flied", "Flyed", "Flown", "Flew"],
-        answer: "Flew"
+        question: "Which sentence is an example of indirect speech?",
+        options: [
+            "'I am going home,' he said.",
+            "He said he was going home.",
+            "'I will call you tomorrow,' she said.",
+            "'Can you help me?' she asked."
+        ],
+        answer: "He said he was going home."
     },
+    {
+        question: "What is the correct use of a semicolon?",
+        options: [
+            "To separate two independent clauses",
+            "To separate items in a simple list",
+            "To show possession",
+            "To join a dependent clause to an independent clause"
+        ],
+        answer: "To separate two independent clauses"
+    },
+    {
+        question: "Which sentence contains an appositive?",
+        options: [
+            "My friend, a talented artist, is painting a mural.",
+            "I saw a bird flying in the sky.",
+            "She is taller than her sister.",
+            "He ran to the store quickly."
+        ],
+        answer: "My friend, a talented artist, is painting a mural."
+    },
+    {
+        question: "What is an independent clause?",
+        options: [
+            "A clause that can stand alone as a sentence",
+            "A group of words without a subject or verb",
+            "A clause that requires a subordinating conjunction",
+            "A clause that cannot stand alone"
+        ],
+        answer: "A clause that can stand alone as a sentence"
+    },
+    {
+        question: "What is the correct use of an apostrophe?",
+        options: [
+            "To show possession or form a contraction",
+            "To join two independent clauses",
+            "To separate items in a list",
+            "To introduce a quotation"
+        ],
+        answer: "To show possession or form a contraction"
+    },
+    {
+        question: "Which of the following is a simple sentence?",
+        options: [
+            "The dog barked loudly.",
+            "The dog barked loudly, and the cat ran away.",
+            "Because the dog barked loudly, the cat ran away.",
+            "The dog barked, and because it was loud, the cat ran away."
+        ],
+        answer: "The dog barked loudly."
+    },
+    {
+        question: "Which of the following is an example of a relative pronoun?",
+        options: ["Which", "She", "He", "It"],
+        answer: "Which"
+    },
+    {
+        question: "What is a collective noun?",
+        options: [
+            "A noun that represents a group of individuals",
+            "A noun that describes an emotion",
+            "A proper noun",
+            "A noun used to describe a place"
+        ],
+        answer: "A noun that represents a group of individuals"
+    },
+    {
+        question: "What is the function of a direct object?",
+        options: [
+            "To receive the action of the verb",
+            "To show possession",
+            "To modify the subject",
+            "To act as a predicate nominative"
+        ],
+        answer: "To receive the action of the verb"
+    },
+    {
+        question: "Which of the following is an abstract noun?",
+        options: ["Happiness", "Table", "Car", "Dog"],
+        answer: "Happiness"
+    },
+    {
+        question: "What type of sentence expresses a command?",
+        options: ["Declarative", "Interrogative", "Exclamatory", "Imperative"],
+        answer: "Imperative"
+    },
+    {
+        question: "What is a predicate adjective?",
+        options: [
+            "An adjective that follows a linking verb and describes the subject",
+            "An adjective that modifies the direct object",
+            "An adjective that describes a pronoun",
+            "An adjective that precedes the subject"
+        ],
+        answer: "An adjective that follows a linking verb and describes the subject"
+    },
+    {
+        question: "Which of the following sentences contains a gerund?",
+        options: ["She enjoys running.", "She ran to the store.", "She will run tomorrow.", "She is running now."],
+        answer: "She enjoys running."
+    },
+    {
+        question: "What is the function of a relative clause?",
+        options: [
+            "To modify a noun or pronoun",
+            "To replace the subject",
+            "To express time or condition",
+            "To introduce a new idea"
+        ],
+        answer: "To modify a noun or pronoun"
+    },
+    {
+        question: "Which of the following is a demonstrative pronoun?",
+        options: ["This", "She", "Him", "Their"],
+        answer: "This"
+    },
+    {
+        question: "What is a declarative sentence?",
+        options: [
+            "A sentence that makes a statement",
+            "A sentence that asks a question",
+            "A sentence that expresses a command",
+            "A sentence that shows strong emotion"
+        ],
+        answer: "A sentence that makes a statement"
+    },
+    {
+        question: "Which sentence contains a compound subject?",
+        options: ["John and Mary went to the store.", "He went to the store.", "She is running.", "The dog barked."],
+        answer: "John and Mary went to the store."
+    },
+    {
+        question: "What is the past participle of the verb 'to go'?",
+        options: ["Gone", "Go", "Went", "Going"],
+        answer: "Gone"
+    },
+    {
+        question: "Which of the following is an example of a correlative conjunction?",
+        options: ["Neither...nor", "Although", "But", "And"],
+        answer: "Neither...nor"
+    },
+    {
+        question: "What is an infinitive?",
+        options: [
+            "The base form of a verb preceded by 'to'",
+            "A verb form used as a noun",
+            "A verb that agrees with the subject",
+            "A verb that expresses past action"
+        ],
+        answer: "The base form of a verb preceded by 'to'"
+    },
+    {
+        question: "Which sentence uses a prepositional phrase?",
+        options: [
+            "She walked to the park.",
+            "She is taller than her sister.",
+            "The book is interesting.",
+            "He ran quickly."
+        ],
+        answer: "She walked to the park."
+    },
+    {
+        question: "Which of the following sentences is passive?",
+        options: [
+            "The book was read by the teacher.",
+            "The teacher read the book.",
+            "She is reading the book.",
+            "The book is interesting."
+        ],
+        answer: "The book was read by the teacher."
+    },
+    {
+        question: "What type of conjunction is used in the sentence: 'She stayed home because it was raining'?",
+        options: ["Subordinating conjunction", "Coordinating conjunction", "Correlative conjunction", "Conjunctive adverb"],
+        answer: "Subordinating conjunction"
+    },
+    {
+        question: "Which of the following is an example of an exclamatory sentence?",
+        options: [
+            "What a beautiful day!",
+            "Where are you going?",
+            "I will go to the store.",
+            "She runs fast."
+        ],
+        answer: "What a beautiful day!"
+    },
+    {
+        question: "What is the comparative form of the adjective 'good'?",
+        options: ["Better", "Best", "More good", "Gooder"],
+        answer: "Better"
+    },
+    {
+        question: "What is a dangling participle?",
+        options: [
+            "A participle that does not modify any noun or pronoun in the sentence",
+            "A participle that follows the subject",
+            "A participle that describes the direct object",
+            "A participle that acts as a subject complement"
+        ],
+        answer: "A participle that does not modify any noun or pronoun in the sentence"
+    },
+    {
+        question: "Which of the following is an example of an imperative sentence?",
+        options: [
+            "Please pass the salt.",
+            "He is going to the park.",
+            "She will attend the meeting tomorrow.",
+            "It is a sunny day."
+        ],
+        answer: "Please pass the salt."
+    },
+    {
+        question: "What type of word is used to join two independent clauses?",
+        options: ["Conjunction", "Adverb", "Preposition", "Interjection"],
+        answer: "Conjunction"
+    },
+    {
+        question: "Which of the following sentences contains an adverbial phrase?",
+        options: [
+            "She sings beautifully.",
+            "She sings very beautifully.",
+            "The music is loud.",
+            "She sang the song beautifully."
+        ],
+        answer: "She sings very beautifully."
+    },
+    {
+        question: "What is the past tense of the verb 'to bring'?",
+        options: ["Brought", "Brang", "Bringed", "Broughten"],
+        answer: "Brought"
+    },
+    {
+        question: "Which of the following sentences contains a subject-verb agreement error?",
+        options: [
+            "The cat chases the mouse.",
+            "The dogs barks loudly.",
+            "She is reading a book.",
+            "They have finished their homework."
+        ],
+        answer: "The dogs barks loudly."
+    },
+    {
+        question: "Which type of sentence asks a question?",
+        options: ["Interrogative", "Declarative", "Imperative", "Exclamatory"],
+        answer: "Interrogative"
+    },
+    {
+        question: "What is the function of a coordinating conjunction?",
+        options: [
+            "To join two words, phrases, or clauses of equal importance",
+            "To introduce a dependent clause",
+            "To show possession",
+            "To express a command"
+        ],
+        answer: "To join two words, phrases, or clauses of equal importance"
+    }
 ];
-
 
 
 
