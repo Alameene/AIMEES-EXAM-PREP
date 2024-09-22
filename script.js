@@ -89,16 +89,6 @@ const questions = [
         answer: "I went to the store I bought apples."
     },
     {
-        question: "What is a gerund?",
-        options: [
-            "A verb form used as an adjective",
-            "A noun formed from a verb ending in -ing",
-            "A verb form used to express an action",
-            "A verb that describes a state of being"
-        ],
-        answer: "A noun formed from a verb ending in -ing"
-    },
-    {
         question: "Which of the following sentences uses an incorrect verb tense?",
         options: [
             "She has been waiting for an hour.",
@@ -137,16 +127,6 @@ const questions = [
             "I love reading books."
         ],
         answer: "I went to the store, and because it was raining, I bought an umbrella."
-    },
-    {
-        question: "Which sentence is an example of indirect speech?",
-        options: [
-            "'I am going home,' he said.",
-            "He said he was going home.",
-            "'I will call you tomorrow,' she said.",
-            "'Can you help me?' she asked."
-        ],
-        answer: "He said he was going home."
     },
     {
         question: "What is the correct use of a semicolon?",
@@ -322,16 +302,6 @@ const questions = [
         question: "What type of conjunction is used in the sentence: 'She stayed home because it was raining'?",
         options: ["Subordinating conjunction", "Coordinating conjunction", "Correlative conjunction", "Conjunctive adverb"],
         answer: "Subordinating conjunction"
-    },
-    {
-        question: "Which of the following is an example of an exclamatory sentence?",
-        options: [
-            "What a beautiful day!",
-            "Where are you going?",
-            "I will go to the store.",
-            "She runs fast."
-        ],
-        answer: "What a beautiful day!"
     },
     {
         question: "What is the comparative form of the adjective 'good'?",
