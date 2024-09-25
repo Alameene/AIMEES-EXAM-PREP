@@ -46,192 +46,186 @@ const users = [
     // Add more users as needed
 ];
 
-
 const questions = [
     { 
-        question: "Which hominid species is known for creating the first tools?", 
-        options: ["Homo habilis", "Homo erectus", "Australopithecus", "Neanderthals"], 
-        answer: "Homo habilis" 
+        question: "Which gas is the primary contributor to the greenhouse effect?", 
+        options: ["Carbon Dioxide", "Oxygen", "Nitrogen", "Argon"], 
+        answer: "Carbon Dioxide" 
     },
     { 
-        question: "Which human ancestor is believed to be the first to walk upright?", 
-        options: ["Australopithecus", "Homo habilis", "Homo erectus", "Neanderthals"], 
-        answer: "Australopithecus" 
-    },
-    { 
-        question: "What is the main component of the Earth's inner core?", 
-        options: ["Iron", "Nickel", "Magnesium", "Silicon"], 
-        answer: "Iron" 
-    },
-    { 
-        question: "Which epoch marks the rise of mammals after the extinction of dinosaurs?", 
-        options: ["Cenozoic", "Mesozoic", "Paleozoic", "Holocene"], 
-        answer: "Cenozoic" 
-    },
-    { 
-        question: "Which element is most abundant in the Earth's crust?", 
-        options: ["Oxygen", "Silicon", "Aluminum", "Iron"], 
-        answer: "Oxygen" 
-    },
-    { 
-        question: "What type of rock is formed from the cooling and solidification of lava on the Earth's surface?", 
-        options: ["Extrusive igneous rock", "Intrusive igneous rock", "Sedimentary rock", "Metamorphic rock"], 
-        answer: "Extrusive igneous rock" 
-    },
-    { 
-        question: "Which gas makes up the majority of the Earth's atmosphere?", 
-        options: ["Nitrogen", "Oxygen", "Carbon dioxide", "Argon"], 
-        answer: "Nitrogen" 
-    },
-    { 
-        question: "Which process is responsible for the movement of Earth's tectonic plates?", 
-        options: ["Convection currents", "Radioactive decay", "Coriolis effect", "Magnetism"], 
-        answer: "Convection currents" 
-    },
-    { 
-        question: "Which metal is primarily used in the production of stainless steel?", 
-        options: ["Chromium", "Iron", "Copper", "Aluminum"], 
-        answer: "Chromium" 
-    },
-    { 
-        question: "The Bronze Age saw the development of which alloy?", 
-        options: ["Bronze", "Steel", "Brass", "Copper"], 
-        answer: "Bronze" 
-    },
-    { 
-        question: "What is the main source of sulfur dioxide in the atmosphere?", 
-        options: ["Burning fossil fuels", "Agricultural runoff", "Deforestation", "Volcanic activity"], 
-        answer: "Burning fossil fuels" 
-    },
-    { 
-        question: "What is the most common gas in natural gas?", 
-        options: ["Methane", "Ethane", "Propane", "Butane"], 
-        answer: "Methane" 
-    },
-    { 
-        question: "Which country has the largest petroleum reserves?", 
-        options: ["Venezuela", "Saudi Arabia", "Russia", "United States"], 
-        answer: "Venezuela" 
-    },
-    { 
-        question: "Which layer of the Earth's atmosphere contains the ozone layer?", 
-        options: ["Stratosphere", "Troposphere", "Mesosphere", "Thermosphere"], 
+        question: "Which layer of the atmosphere is most affected by ozone depletion?", 
+        options: ["Stratosphere", "Troposphere", "Mesosphere", "Exosphere"], 
         answer: "Stratosphere" 
     },
     { 
-        question: "Which process is used to enrich uranium for use in nuclear reactors?", 
-        options: ["Gas centrifugation", "Fractional distillation", "Electrolysis", "Smelting"], 
-        answer: "Gas centrifugation" 
+        question: "What is the SI unit of mass?", 
+        options: ["Kilogram", "Gram", "Pound", "Ounce"], 
+        answer: "Kilogram" 
     },
     { 
-        question: "Which mineral is primarily responsible for the hardness of bones and teeth?", 
-        options: ["Calcium", "Iron", "Magnesium", "Zinc"], 
-        answer: "Calcium" 
+        question: "Which tool is used to measure length with high precision in the lab?", 
+        options: ["Vernier Calipers", "Meter Rule", "Tape Measure", "Protractor"], 
+        answer: "Vernier Calipers" 
     },
     { 
-        question: "Which energy source is considered renewable?", 
-        options: ["Solar energy", "Natural gas", "Coal", "Uranium"], 
-        answer: "Solar energy" 
+        question: "What is the relationship between mass and weight on Earth?", 
+        options: ["Weight = Mass × Gravity", "Weight = Mass ÷ Gravity", "Weight = Mass × Speed", "Weight = Mass ÷ Time"], 
+        answer: "Weight = Mass × Gravity" 
     },
     { 
-        question: "Which process is used to extract metals from their ores?", 
-        options: ["Smelting", "Filtration", "Distillation", "Crystallization"], 
-        answer: "Smelting" 
+        question: "Which form of energy is stored in an object due to its position?", 
+        options: ["Potential Energy", "Kinetic Energy", "Thermal Energy", "Electrical Energy"], 
+        answer: "Potential Energy" 
     },
     { 
-        question: "Which fossil fuel is considered the cleanest in terms of carbon emissions?", 
-        options: ["Natural gas", "Coal", "Oil", "Peat"], 
-        answer: "Natural gas" 
+        question: "Which form of energy is associated with motion?", 
+        options: ["Kinetic Energy", "Potential Energy", "Chemical Energy", "Nuclear Energy"], 
+        answer: "Kinetic Energy" 
     },
     { 
-        question: "Which metal is most commonly used in electrical wiring?", 
-        options: ["Copper", "Aluminum", "Iron", "Lead"], 
-        answer: "Copper" 
+        question: "Which civilization is credited with the development of early mathematics?", 
+        options: ["Babylonia", "Greece", "Egypt", "India"], 
+        answer: "Babylonia" 
     },
     { 
-        question: "Which of the following metals is liquid at room temperature?", 
-        options: ["Mercury", "Iron", "Aluminum", "Copper"], 
-        answer: "Mercury" 
+        question: "Which Indian mathematician made significant contributions to trigonometry?", 
+        options: ["Aryabhata", "Ramanujan", "Brahmagupta", "Bhaskara"], 
+        answer: "Aryabhata" 
     },
     { 
-        question: "Which of the following contributes the most to acid rain?", 
-        options: ["Sulfur dioxide", "Carbon dioxide", "Methane", "Nitrogen"], 
-        answer: "Sulfur dioxide" 
+        question: "What is the significance of zero in the history of mathematics?", 
+        options: ["It was first introduced in India", "It was discovered by the Greeks", "It represents infinity", "It has no significance"], 
+        answer: "It was first introduced in India" 
     },
     { 
-        question: "Which human ancestor is associated with the development of language?", 
-        options: ["Homo sapiens", "Homo habilis", "Homo erectus", "Australopithecus"], 
-        answer: "Homo sapiens" 
+        question: "What was a major mathematical contribution of the ancient Egyptians?", 
+        options: ["Pyramids' geometry", "Algebraic equations", "Calculus", "Binary system"], 
+        answer: "Pyramids' geometry" 
     },
     { 
-        question: "Which metal is commonly used in the production of aluminum cans?", 
-        options: ["Bauxite", "Copper", "Tin", "Lead"], 
-        answer: "Bauxite" 
+        question: "Which civilization is known for its contributions to the field of geometry?", 
+        options: ["Greece", "India", "Babylonia", "China"], 
+        answer: "Greece" 
     },
     { 
-        question: "Which of the following rocks can be transformed into marble through metamorphism?", 
-        options: ["Limestone", "Shale", "Granite", "Sandstone"], 
-        answer: "Limestone" 
+        question: "Which scientist is known for formulating the theory of gravitation?", 
+        options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Johannes Kepler"], 
+        answer: "Isaac Newton" 
     },
     { 
-        question: "What is the main energy source driving the water cycle?", 
-        options: ["The sun", "The moon", "Volcanic activity", "Wind"], 
-        answer: "The sun" 
+        question: "Which of the following is NOT a fundamental unit in the SI system?", 
+        options: ["Volt", "Meter", "Kilogram", "Second"], 
+        answer: "Volt" 
     },
     { 
-        question: "Which type of coal has the highest carbon content?", 
-        options: ["Anthracite", "Bituminous", "Lignite", "Peat"], 
-        answer: "Anthracite" 
+        question: "Which type of resource is coal classified as?", 
+        options: ["Non-renewable", "Renewable", "Inexhaustible", "Biological"], 
+        answer: "Non-renewable" 
     },
     { 
-        question: "Which gas is the most potent greenhouse gas?", 
-        options: ["Methane", "Carbon dioxide", "Nitrous oxide", "Oxygen"], 
-        answer: "Methane" 
+        question: "Which process is used to separate crude petroleum into its various products?", 
+        options: ["Distillation", "Filtration", "Cracking", "Fractionation"], 
+        answer: "Distillation" 
     },
     { 
-        question: "Which method is primarily used to extract oil from the Earth?", 
-        options: ["Drilling", "Mining", "Hydraulic fracturing", "Smelting"], 
-        answer: "Drilling" 
+        question: "What is the primary use of crude petroleum?", 
+        options: ["Fuel", "Construction", "Fertilizer", "Jewelry"], 
+        answer: "Fuel" 
     },
     { 
-        question: "Which country is the largest producer of copper?", 
-        options: ["Chile", "China", "Russia", "United States"], 
-        answer: "Chile" 
+        question: "Which product is obtained from the distillation of petroleum?", 
+        options: ["Gasoline", "Plastic", "Wood", "Coal"], 
+        answer: "Gasoline" 
     },
     { 
-        question: "Which of the following is considered a metamorphic rock?", 
-        options: ["Slate", "Granite", "Sandstone", "Basalt"], 
-        answer: "Slate" 
+        question: "What is the major pollutant produced by burning fossil fuels?", 
+        options: ["Carbon Dioxide", "Oxygen", "Nitrogen", "Argon"], 
+        answer: "Carbon Dioxide" 
     },
     { 
-        question: "Which of the following gases is primarily responsible for acid rain?", 
-        options: ["Sulfur dioxide", "Carbon monoxide", "Methane", "Oxygen"], 
-        answer: "Sulfur dioxide" 
+        question: "Which phenomenon is responsible for the formation of acid rain?", 
+        options: ["Sulfur Dioxide emissions", "Ozone depletion", "Deforestation", "Greenhouse effect"], 
+        answer: "Sulfur Dioxide emissions" 
     },
     { 
-        question: "Which layer of Earth is composed primarily of molten rock?", 
-        options: ["Mantle", "Crust", "Inner core", "Outer core"], 
-        answer: "Mantle" 
+        question: "Which type of smog is caused by reactions between sunlight and pollutants?", 
+        options: ["Photochemical Smog", "Industrial Smog", "Acid Smog", "Thermal Smog"], 
+        answer: "Photochemical Smog" 
     },
     { 
-        question: "Which of the following metals is used in batteries?", 
-        options: ["Lithium", "Iron", "Lead", "Aluminum"], 
-        answer: "Lithium" 
+        question: "Which scientist is known for his contributions to thermodynamics?", 
+        options: ["James Joule", "Isaac Newton", "Albert Einstein", "Michael Faraday"], 
+        answer: "James Joule" 
     },
     { 
-        question: "Which of the following processes results in the formation of sedimentary rocks?", 
-        options: ["Compaction and cementation", "Melting and solidification", "Metamorphism", "Weathering and erosion"], 
-        answer: "Compaction and cementation" 
+        question: "Which renewable resource is widely used for electricity generation?", 
+        options: ["Solar Energy", "Natural Gas", "Coal", "Oil"], 
+        answer: "Solar Energy" 
+    },
+    { 
+        question: "Which country is known for early advancements in hydraulic engineering?", 
+        options: ["Egypt", "Babylonia", "India", "Greece"], 
+        answer: "Egypt" 
+    },
+    { 
+        question: "Which term describes the depletion of non-renewable resources?", 
+        options: ["Resource exhaustion", "Pollution", "Recycling", "Conservation"], 
+        answer: "Resource exhaustion" 
+    },
+    { 
+        question: "Which process is essential for the recycling of renewable resources?", 
+        options: ["Sustainable harvesting", "Mining", "Cracking", "Fracking"], 
+        answer: "Sustainable harvesting" 
+    },
+    { 
+        question: "Which element is represented by the symbol 'O'?", 
+        options: ["Oxygen", "Gold", "Osmium", "Oganesson"], 
+        answer: "Oxygen" 
+    },
+    { 
+        question: "Which of the following processes is part of the water cycle?", 
+        options: ["Evaporation", "Combustion", "Photosynthesis", "Digestion"], 
+        answer: "Evaporation" 
+    },
+    { 
+        question: "Which concept explains the potential and kinetic energy of an object?", 
+        options: ["Mechanical energy", "Thermal energy", "Chemical energy", "Nuclear energy"], 
+        answer: "Mechanical energy" 
+    },
+    { 
+        question: "Which branch of science deals with the structure and behavior of matter?", 
+        options: ["Physics", "Chemistry", "Biology", "Geology"], 
+        answer: "Physics" 
+    },
+    { 
+        question: "Which of the following energy sources is considered renewable?", 
+        options: ["Wind", "Natural Gas", "Coal", "Oil"], 
+        answer: "Wind" 
+    },
+    { 
+        question: "What is the fundamental principle behind hydroelectric power?", 
+        options: ["Converting water flow into electrical energy", "Burning water for energy", "Using solar energy to power dams", "Harnessing ocean currents"], 
+        answer: "Converting water flow into electrical energy" 
+    },
+    { 
+        question: "What is the term for the long-term increase in Earth's average temperature?", 
+        options: ["Global Warming", "Acid Rain", "Ozone Depletion", "Resource Depletion"], 
+        answer: "Global Warming" 
+    },
+    { 
+        question: "Which measurement tool uses a sliding scale for precise readings of length?", 
+        options: ["Vernier Caliper", "Protractor", "Compass", "Thermometer"], 
+        answer: "Vernier Caliper" 
+    },
+    { 
+        question: "Which law describes the relationship between energy, work, and heat?", 
+        options: ["First Law of Thermodynamics", "Newton's First Law", "Law of Conservation of Momentum", "Law of Universal Gravitation"], 
+        answer: "First Law of Thermodynamics" 
     }
 ];
 
 
-// Questions array
-/**const questions = [
-    {
-        question: "What is the term for a verb that expresses an action directed toward a person or thing?",
-        options: ["Intransitive verb", "Transitive verb", "Linking verb", "Auxiliary verb"],
-        answer: "Transitive verb"
+ /**Transitive verb"
     },
     {
         question: "Which of the following sentences contains a dangling modifier?",
