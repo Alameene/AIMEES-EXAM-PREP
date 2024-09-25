@@ -39,15 +39,195 @@ const users = [
     { username: "DANIEL", password: "23/208CHM/291" },
     { username: "ANGEL", password: "23/208CHM/366" },
     { username: "VICTORIA", password: "23/208CHM/351" },
-    { username: "GUEST-I", password: "0000" },
-    { username: "GUEST-II", password: "1111" },
+    { username: "GUEST-I", password: "0000A" },
+    { username: "GUEST-II", password: "1111B" },
     // Admin account
     { username: "ADMIN", password: "04926514", isAdmin: true }  
     // Add more users as needed
 ];
- 
-// Questions array
+
+
 const questions = [
+    { 
+        question: "Which hominid species is known for creating the first tools?", 
+        options: ["Homo habilis", "Homo erectus", "Australopithecus", "Neanderthals"], 
+        answer: "Homo habilis" 
+    },
+    { 
+        question: "Which human ancestor is believed to be the first to walk upright?", 
+        options: ["Australopithecus", "Homo habilis", "Homo erectus", "Neanderthals"], 
+        answer: "Australopithecus" 
+    },
+    { 
+        question: "What is the main component of the Earth's inner core?", 
+        options: ["Iron", "Nickel", "Magnesium", "Silicon"], 
+        answer: "Iron" 
+    },
+    { 
+        question: "Which epoch marks the rise of mammals after the extinction of dinosaurs?", 
+        options: ["Cenozoic", "Mesozoic", "Paleozoic", "Holocene"], 
+        answer: "Cenozoic" 
+    },
+    { 
+        question: "Which element is most abundant in the Earth's crust?", 
+        options: ["Oxygen", "Silicon", "Aluminum", "Iron"], 
+        answer: "Oxygen" 
+    },
+    { 
+        question: "What type of rock is formed from the cooling and solidification of lava on the Earth's surface?", 
+        options: ["Extrusive igneous rock", "Intrusive igneous rock", "Sedimentary rock", "Metamorphic rock"], 
+        answer: "Extrusive igneous rock" 
+    },
+    { 
+        question: "Which gas makes up the majority of the Earth's atmosphere?", 
+        options: ["Nitrogen", "Oxygen", "Carbon dioxide", "Argon"], 
+        answer: "Nitrogen" 
+    },
+    { 
+        question: "Which process is responsible for the movement of Earth's tectonic plates?", 
+        options: ["Convection currents", "Radioactive decay", "Coriolis effect", "Magnetism"], 
+        answer: "Convection currents" 
+    },
+    { 
+        question: "Which metal is primarily used in the production of stainless steel?", 
+        options: ["Chromium", "Iron", "Copper", "Aluminum"], 
+        answer: "Chromium" 
+    },
+    { 
+        question: "The Bronze Age saw the development of which alloy?", 
+        options: ["Bronze", "Steel", "Brass", "Copper"], 
+        answer: "Bronze" 
+    },
+    { 
+        question: "What is the main source of sulfur dioxide in the atmosphere?", 
+        options: ["Burning fossil fuels", "Agricultural runoff", "Deforestation", "Volcanic activity"], 
+        answer: "Burning fossil fuels" 
+    },
+    { 
+        question: "What is the most common gas in natural gas?", 
+        options: ["Methane", "Ethane", "Propane", "Butane"], 
+        answer: "Methane" 
+    },
+    { 
+        question: "Which country has the largest petroleum reserves?", 
+        options: ["Venezuela", "Saudi Arabia", "Russia", "United States"], 
+        answer: "Venezuela" 
+    },
+    { 
+        question: "Which layer of the Earth's atmosphere contains the ozone layer?", 
+        options: ["Stratosphere", "Troposphere", "Mesosphere", "Thermosphere"], 
+        answer: "Stratosphere" 
+    },
+    { 
+        question: "Which process is used to enrich uranium for use in nuclear reactors?", 
+        options: ["Gas centrifugation", "Fractional distillation", "Electrolysis", "Smelting"], 
+        answer: "Gas centrifugation" 
+    },
+    { 
+        question: "Which mineral is primarily responsible for the hardness of bones and teeth?", 
+        options: ["Calcium", "Iron", "Magnesium", "Zinc"], 
+        answer: "Calcium" 
+    },
+    { 
+        question: "Which energy source is considered renewable?", 
+        options: ["Solar energy", "Natural gas", "Coal", "Uranium"], 
+        answer: "Solar energy" 
+    },
+    { 
+        question: "Which process is used to extract metals from their ores?", 
+        options: ["Smelting", "Filtration", "Distillation", "Crystallization"], 
+        answer: "Smelting" 
+    },
+    { 
+        question: "Which fossil fuel is considered the cleanest in terms of carbon emissions?", 
+        options: ["Natural gas", "Coal", "Oil", "Peat"], 
+        answer: "Natural gas" 
+    },
+    { 
+        question: "Which metal is most commonly used in electrical wiring?", 
+        options: ["Copper", "Aluminum", "Iron", "Lead"], 
+        answer: "Copper" 
+    },
+    { 
+        question: "Which of the following metals is liquid at room temperature?", 
+        options: ["Mercury", "Iron", "Aluminum", "Copper"], 
+        answer: "Mercury" 
+    },
+    { 
+        question: "Which of the following contributes the most to acid rain?", 
+        options: ["Sulfur dioxide", "Carbon dioxide", "Methane", "Nitrogen"], 
+        answer: "Sulfur dioxide" 
+    },
+    { 
+        question: "Which human ancestor is associated with the development of language?", 
+        options: ["Homo sapiens", "Homo habilis", "Homo erectus", "Australopithecus"], 
+        answer: "Homo sapiens" 
+    },
+    { 
+        question: "Which metal is commonly used in the production of aluminum cans?", 
+        options: ["Bauxite", "Copper", "Tin", "Lead"], 
+        answer: "Bauxite" 
+    },
+    { 
+        question: "Which of the following rocks can be transformed into marble through metamorphism?", 
+        options: ["Limestone", "Shale", "Granite", "Sandstone"], 
+        answer: "Limestone" 
+    },
+    { 
+        question: "What is the main energy source driving the water cycle?", 
+        options: ["The sun", "The moon", "Volcanic activity", "Wind"], 
+        answer: "The sun" 
+    },
+    { 
+        question: "Which type of coal has the highest carbon content?", 
+        options: ["Anthracite", "Bituminous", "Lignite", "Peat"], 
+        answer: "Anthracite" 
+    },
+    { 
+        question: "Which gas is the most potent greenhouse gas?", 
+        options: ["Methane", "Carbon dioxide", "Nitrous oxide", "Oxygen"], 
+        answer: "Methane" 
+    },
+    { 
+        question: "Which method is primarily used to extract oil from the Earth?", 
+        options: ["Drilling", "Mining", "Hydraulic fracturing", "Smelting"], 
+        answer: "Drilling" 
+    },
+    { 
+        question: "Which country is the largest producer of copper?", 
+        options: ["Chile", "China", "Russia", "United States"], 
+        answer: "Chile" 
+    },
+    { 
+        question: "Which of the following is considered a metamorphic rock?", 
+        options: ["Slate", "Granite", "Sandstone", "Basalt"], 
+        answer: "Slate" 
+    },
+    { 
+        question: "Which of the following gases is primarily responsible for acid rain?", 
+        options: ["Sulfur dioxide", "Carbon monoxide", "Methane", "Oxygen"], 
+        answer: "Sulfur dioxide" 
+    },
+    { 
+        question: "Which layer of Earth is composed primarily of molten rock?", 
+        options: ["Mantle", "Crust", "Inner core", "Outer core"], 
+        answer: "Mantle" 
+    },
+    { 
+        question: "Which of the following metals is used in batteries?", 
+        options: ["Lithium", "Iron", "Lead", "Aluminum"], 
+        answer: "Lithium" 
+    },
+    { 
+        question: "Which of the following processes results in the formation of sedimentary rocks?", 
+        options: ["Compaction and cementation", "Melting and solidification", "Metamorphism", "Weathering and erosion"], 
+        answer: "Compaction and cementation" 
+    }
+];
+
+
+// Questions array
+/**const questions = [
     {
         question: "What is the term for a verb that expresses an action directed toward a person or thing?",
         options: ["Intransitive verb", "Transitive verb", "Linking verb", "Auxiliary verb"],
@@ -373,8 +553,7 @@ const questions = [
         ],
         answer: "To join two words, phrases, or clauses of equal importance"
     }
-];
-
+];*/
 
 
 // Initialize variables
