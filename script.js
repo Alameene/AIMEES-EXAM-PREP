@@ -247,7 +247,7 @@ document.getElementById('details-form').addEventListener('submit', (event) => {
             viewResults();  // Admin login, view all results
         } else {
             // Check if user has already taken the exam
-            if (localStorage.getItem(`score_${username}`) !== null) {
+            if (sessionStorage.getItem(`score_${username}`) !== null) {
                 alert("You have already attempted the exam.");
             } else {
                 startExam(username);
