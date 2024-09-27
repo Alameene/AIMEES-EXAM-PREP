@@ -48,181 +48,167 @@ const users = [
 
 const questions = [
     { 
-        question: "Which gas is the primary contributor to the greenhouse effect?", 
-        options: ["Carbon Dioxide", "Oxygen", "Nitrogen", "Argon"], 
-        answer: "Carbon Dioxide" 
+        question: "Which early hominid species is associated with the first known use of stone tools?", 
+        options: ["Australopithecus", "Neanderthals", "Homo habilis", "Homo erectus"], 
+        answer: "Homo habilis" 
     },
     { 
-        question: "Which layer of the atmosphere is most affected by ozone depletion?", 
-        options: ["Stratosphere", "Troposphere", "Mesosphere", "Exosphere"], 
-        answer: "Stratosphere" 
+        question: "Which species is considered the first to use fire for cooking and warmth?", 
+        options: ["Neanderthals", "Homo erectus", "Australopithecus", "Homo habilis"], 
+        answer: "Homo erectus" 
     },
     { 
-        question: "What is the SI unit of mass?", 
-        options: ["Kilogram", "Gram", "Pound", "Ounce"], 
-        answer: "Kilogram" 
+        question: "Which early human ancestor had a relatively small brain and is considered one of the earliest hominids?", 
+        options: ["Ramapithecus", "Homo erectus", "Australopithecus", "Homo habilis"], 
+        answer: "Australopithecus" 
     },
     { 
-        question: "Which tool is used to measure length with high precision in the lab?", 
-        options: ["Vernier Calipers", "Meter Rule", "Tape Measure", "Protractor"], 
-        answer: "Vernier Calipers" 
+        question: "Which species is known for living in Europe and parts of western Asia and coexisted with early Homo sapiens?", 
+        options: ["Neanderthals", "Australopithecus", "Ramapithecus", "Homo habilis"], 
+        answer: "Neanderthals" 
     },
     { 
-        question: "What is the relationship between mass and weight on Earth?", 
-        options: ["Weight = Mass × Gravity", "Weight = Mass ÷ Gravity", "Weight = Mass × Speed", "Weight = Mass ÷ Time"], 
-        answer: "Weight = Mass × Gravity" 
+        question: "The genus Homo first emerged during which geological period?", 
+        options: ["Holocene", "Pleistocene", "Miocene", "Eocene"], 
+        answer: "Pleistocene" 
     },
     { 
-        question: "Which form of energy is stored in an object due to its position?", 
-        options: ["Potential Energy", "Kinetic Energy", "Thermal Energy", "Electrical Energy"], 
-        answer: "Potential Energy" 
+        question: "Which species is believed to have first migrated out of Africa?", 
+        options: ["Homo erectus", "Australopithecus", "Homo habilis", "Neanderthals"], 
+        answer: "Homo erectus" 
     },
     { 
-        question: "Which form of energy is associated with motion?", 
-        options: ["Kinetic Energy", "Potential Energy", "Chemical Energy", "Nuclear Energy"], 
-        answer: "Kinetic Energy" 
+        question: "Ramapithecus is an early ancestor thought to have existed during which epoch?", 
+        options: ["Holocene", "Miocene", "Pleistocene", "Eocene"], 
+        answer: "Miocene" 
     },
     { 
-        question: "Which civilization is credited with the development of early mathematics?", 
-        options: ["Babylonia", "Greece", "Egypt", "India"], 
-        answer: "Babylonia" 
+        question: "Which hominid species is known for creating sophisticated tools using the Levallois technique?", 
+        options: ["Australopithecus", "Neanderthals", "Homo erectus", "Homo habilis"], 
+        answer: "Neanderthals" 
     },
     { 
-        question: "Which Indian mathematician made significant contributions to trigonometry?", 
-        options: ["Aryabhata", "Ramanujan", "Brahmagupta", "Bhaskara"], 
-        answer: "Aryabhata" 
+        question: "Which gas is primarily responsible for the depletion of the ozone layer?", 
+        options: ["Methane", "Chlorofluorocarbons (CFCs)", "Nitrous oxide", "Carbon dioxide"], 
+        answer: "Chlorofluorocarbons (CFCs)" 
     },
     { 
-        question: "What is the significance of zero in the history of mathematics?", 
-        options: ["It was first introduced in India", "It was discovered by the Greeks", "It represents infinity", "It has no significance"], 
-        answer: "It was first introduced in India" 
+        question: "Which unit is used to measure electric current?", 
+        options: ["Volt", "Watt", "Joule", "Ampere"], 
+        answer: "Ampere" 
     },
     { 
-        question: "What was a major mathematical contribution of the ancient Egyptians?", 
-        options: ["Pyramids' geometry", "Algebraic equations", "Calculus", "Binary system"], 
-        answer: "Pyramids' geometry" 
+        question: "The fundamental SI unit for measuring length is?", 
+        options: ["Foot", "Inch", "Meter", "Centimeter"], 
+        answer: "Meter" 
     },
     { 
-        question: "Which civilization is known for its contributions to the field of geometry?", 
-        options: ["Greece", "India", "Babylonia", "China"], 
-        answer: "Greece" 
+        question: "Which instrument is used to measure atmospheric pressure?", 
+        options: ["Barometer", "Thermometer", "Anemometer", "Hygrometer"], 
+        answer: "Barometer" 
     },
     { 
-        question: "Which scientist is known for formulating the theory of gravitation?", 
-        options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Johannes Kepler"], 
-        answer: "Isaac Newton" 
+        question: "The vernier caliper is primarily used to measure which of the following?", 
+        options: ["Mass", "Speed", "Length", "Temperature"], 
+        answer: "Length" 
     },
     { 
-        question: "Which of the following is NOT a fundamental unit in the SI system?", 
-        options: ["Volt", "Meter", "Kilogram", "Second"], 
-        answer: "Volt" 
+        question: "Which of the following refers to energy stored in a stretched or compressed object?", 
+        options: ["Kinetic energy", "Thermal energy", "Elastic potential energy", "Chemical energy"], 
+        answer: "Elastic potential energy" 
     },
     { 
-        question: "Which type of resource is coal classified as?", 
-        options: ["Non-renewable", "Renewable", "Inexhaustible", "Biological"], 
-        answer: "Non-renewable" 
+        question: "Kinetic energy is the energy an object possesses due to its?", 
+        options: ["Motion", "Charge", "Temperature", "Position"], 
+        answer: "Motion" 
     },
     { 
-        question: "Which process is used to separate crude petroleum into its various products?", 
-        options: ["Distillation", "Filtration", "Cracking", "Fractionation"], 
-        answer: "Distillation" 
+        question: "Which form of energy is associated with an object’s position relative to the Earth?", 
+        options: ["Gravitational potential energy", "Thermal energy", "Nuclear energy", "Kinetic energy"], 
+        answer: "Gravitational potential energy" 
     },
     { 
-        question: "What is the primary use of crude petroleum?", 
-        options: ["Fuel", "Construction", "Fertilizer", "Jewelry"], 
-        answer: "Fuel" 
+        question: "In physics, which law states that energy cannot be created or destroyed, only transformed?", 
+        options: ["Newton's Third Law", "Law of Conservation of Energy", "Ohm's Law", "Law of Inertia"], 
+        answer: "Law of Conservation of Energy" 
     },
     { 
-        question: "Which product is obtained from the distillation of petroleum?", 
-        options: ["Gasoline", "Plastic", "Wood", "Coal"], 
-        answer: "Gasoline" 
+        question: "Which device is used to measure temperature?", 
+        options: ["Calorimeter", "Anemometer", "Barometer", "Thermometer"], 
+        answer: "Thermometer" 
     },
     { 
-        question: "What is the major pollutant produced by burning fossil fuels?", 
-        options: ["Carbon Dioxide", "Oxygen", "Nitrogen", "Argon"], 
-        answer: "Carbon Dioxide" 
+        question: "Which form of radiation is most harmful to human tissues?", 
+        options: ["Beta particles", "Alpha particles", "Ultraviolet light", "Gamma rays"], 
+        answer: "Gamma rays" 
     },
     { 
-        question: "Which phenomenon is responsible for the formation of acid rain?", 
-        options: ["Sulfur Dioxide emissions", "Ozone depletion", "Deforestation", "Greenhouse effect"], 
-        answer: "Sulfur Dioxide emissions" 
+        question: "Which of the following gases does not contribute significantly to global warming?", 
+        options: ["Methane", "Carbon dioxide", "Nitrous oxide", "Nitrogen"], 
+        answer: "Nitrogen" 
     },
     { 
-        question: "Which type of smog is caused by reactions between sunlight and pollutants?", 
-        options: ["Photochemical Smog", "Industrial Smog", "Acid Smog", "Thermal Smog"], 
-        answer: "Photochemical Smog" 
+        question: "The greenhouse effect is primarily caused by which of the following gases?", 
+        options: ["Carbon dioxide", "Helium", "Oxygen", "Nitrogen"], 
+        answer: "Carbon dioxide" 
     },
     { 
-        question: "Which scientist is known for his contributions to thermodynamics?", 
-        options: ["James Joule", "Isaac Newton", "Albert Einstein", "Michael Faraday"], 
-        answer: "James Joule" 
+        question: "Which mineral resource is primarily extracted in Nigeria’s Niger Delta?", 
+        options: ["Coal", "Gold", "Tin", "Petroleum"], 
+        answer: "Petroleum" 
     },
     { 
-        question: "Which renewable resource is widely used for electricity generation?", 
-        options: ["Solar Energy", "Natural Gas", "Coal", "Oil"], 
-        answer: "Solar Energy" 
+        question: "Which process is used to separate petroleum into its components?", 
+        options: ["Condensation", "Cracking", "Polymerization", "Fractional distillation"], 
+        answer: "Fractional distillation" 
     },
     { 
-        question: "Which country is known for early advancements in hydraulic engineering?", 
-        options: ["Egypt", "Babylonia", "India", "Greece"], 
-        answer: "Egypt" 
+        question: "Which fossil fuel is known as 'black gold'?", 
+        options: ["Natural Gas", "Petroleum", "Coal", "Oil Shale"], 
+        answer: "Petroleum" 
     },
     { 
-        question: "Which term describes the depletion of non-renewable resources?", 
-        options: ["Resource exhaustion", "Pollution", "Recycling", "Conservation"], 
-        answer: "Resource exhaustion" 
+        question: "Which gas is used as a shielding gas in welding?", 
+        options: ["Carbon dioxide", "Nitrogen", "Argon", "Oxygen"], 
+        answer: "Argon" 
     },
     { 
-        question: "Which process is essential for the recycling of renewable resources?", 
-        options: ["Sustainable harvesting", "Mining", "Cracking", "Fracking"], 
-        answer: "Sustainable harvesting" 
+        question: "The measurement of mass is typically carried out using which instrument?", 
+        options: ["Calorimeter", "Thermometer", "Balance", "Barometer"], 
+        answer: "Balance" 
     },
     { 
-        question: "Which element is represented by the symbol 'O'?", 
-        options: ["Oxygen", "Gold", "Osmium", "Oganesson"], 
-        answer: "Oxygen" 
+        question: "In which layer of the Earth’s atmosphere does the ionosphere reside?", 
+        options: ["Troposphere", "Mesosphere", "Thermosphere", "Stratosphere"], 
+        answer: "Thermosphere" 
     },
     { 
-        question: "Which of the following processes is part of the water cycle?", 
-        options: ["Evaporation", "Combustion", "Photosynthesis", "Digestion"], 
-        answer: "Evaporation" 
+        question: "Which element has the highest atomic number that is still naturally occurring?", 
+        options: ["Lead", "Thorium", "Plutonium", "Uranium"], 
+        answer: "Uranium" 
     },
     { 
-        question: "Which concept explains the potential and kinetic energy of an object?", 
-        options: ["Mechanical energy", "Thermal energy", "Chemical energy", "Nuclear energy"], 
-        answer: "Mechanical energy" 
+        question: "Which era is known for the introduction of bronze tools?", 
+        options: ["Iron Age", "Paleolithic Age", "Bronze Age", "Neolithic Age"], 
+        answer: "Bronze Age" 
     },
     { 
-        question: "Which branch of science deals with the structure and behavior of matter?", 
-        options: ["Physics", "Chemistry", "Biology", "Geology"], 
-        answer: "Physics" 
+        question: "Which region in Nigeria is most known for tin mining?", 
+        options: ["Ogun State", "Cross River State", "Niger Delta", "Jos Plateau"], 
+        answer: "Jos Plateau" 
     },
     { 
-        question: "Which of the following energy sources is considered renewable?", 
-        options: ["Wind", "Natural Gas", "Coal", "Oil"], 
-        answer: "Wind" 
+        question: "Which type of fossil is commonly used to determine the age of a sedimentary rock layer?", 
+        options: ["Body fossil", "Molecular fossil", "Index fossil", "Trace fossil"], 
+        answer: "Index fossil" 
     },
     { 
-        question: "What is the fundamental principle behind hydroelectric power?", 
-        options: ["Converting water flow into electrical energy", "Burning water for energy", "Using solar energy to power dams", "Harnessing ocean currents"], 
-        answer: "Converting water flow into electrical energy" 
-    },
-    { 
-        question: "What is the term for the long-term increase in Earth's average temperature?", 
-        options: ["Global Warming", "Acid Rain", "Ozone Depletion", "Resource Depletion"], 
-        answer: "Global Warming" 
-    },
-    { 
-        question: "Which measurement tool uses a sliding scale for precise readings of length?", 
-        options: ["Vernier Caliper", "Protractor", "Compass", "Thermometer"], 
-        answer: "Vernier Caliper" 
-    },
-    { 
-        question: "Which law describes the relationship between energy, work, and heat?", 
-        options: ["First Law of Thermodynamics", "Newton's First Law", "Law of Conservation of Momentum", "Law of Universal Gravitation"], 
-        answer: "First Law of Thermodynamics" 
+        question: "What is the primary source of lead pollution?", 
+        options: ["Solar panels", "Lead-based paints", "Hydroelectric dams", "Natural gas"], 
+        answer: "Lead-based paints" 
     }
 ];
+
 
 
 // Initialize variables
@@ -245,7 +231,7 @@ document.getElementById('details-form').addEventListener('submit', (event) => {
             viewResults();  // Admin login, view all results
         } else {
             // Check if user has already taken the exam
-            if (sessionStorage.getItem(`score_${username}`) !== null) {
+            if (localStorage.getItem(`score_${username}`) !== null) {
                 alert("You have already attempted the exam.");
             } else {
                 startExam(username);
