@@ -206,7 +206,23 @@ const questions = [
         question: "What is the primary source of lead pollution?", 
         options: ["Solar panels", "Lead-based paints", "Hydroelectric dams", "Natural gas"], 
         answer: "Lead-based paints" 
+    },
+    { 
+        question: "Which early hominid species is believed to be the direct ancestor of both Neanderthals and Homo sapiens?", 
+        options: ["Homo habilis", "Homo erectus", "Australopithecus", "Homo heidelbergensis"], 
+        answer: "Homo heidelbergensis" 
+    },
+    { 
+        question: "Which form of renewable energy relies on the heat from the Earth’s core?", 
+        options: ["Wind energy", "Geothermal energy", "Solar energy", "Hydropower"], 
+        answer: "Geothermal energy" 
+    },
+    { 
+        question: "Which instrument is used to measure the refractive index of a material?", 
+        options: ["Spectrometer", "Barometer", "Refractometer", "Calorimeter"], 
+        answer: "Refractometer" 
     }
+
 ];
 
 
