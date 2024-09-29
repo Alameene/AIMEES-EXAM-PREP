@@ -1,19 +1,8 @@
 // User data with unique usernames
 const users = [
     { username: "AL-AMEEN", password: "23/208CHM/420" },
+    { username: "GUEST", password: "CHEMISTRY" },
     { username: "ISAAC", password: "23/207ACC/924" },
-    { username: "AYONIJOYCE", password: "23/208CHM/395" },
-    { username: "ZUBEIDAH", password: "23/208CHM/417" },
-    { username: "AKACHUKWU", password: "23/208CHM/358" },
-    { username: "FATHIA", password: "23/208CHM/379" },
-    { username: "MARDIYA", password: "23/208CHM/353" },
-    { username: "MIRACLE", password: "23/208CHM/355" },
-    { username: "ABIMBOLA", password: "23/208CHM/340" },
-    { username: "JACKSON", password: "23/208CHM/394" },
-    { username: "MAAMI", password: "23/208CHM/401" },
-    { username: "CHIMAOBI", password: "23/208CHM/415" },
-    { username: "HAVILAH", password: "23/208CHM/399" }, // Renamed to ensure uniqueness
-    { username: "UMMI", password: "23/208CHM/330" },
     { username: "MICHEAL", password: "23/207ACC/832" },
     { username: "FELICIA", password: "1234" },
     { username: "SHALOM", password: "1234" },
@@ -23,23 +12,6 @@ const users = [
     { username: "RASHEEDAT", password: "1234" },
     { username: "OLUCHI", password: "1234" },
     { username: "RODIAT", password: "23/208CHM/412" },
-    { username: "AISHA", password: "23/208CHM/350" },
-    { username: "JEMILAT", password: "23/208CHM/367" },
-    { username: "GOODLUCK", password: "23/208CHM/338" },
-    { username: "BENEDICTA", password: "23/208CHM/369" }, // Renamed to ensure uniqueness
-    { username: "LOVETH", password: "23/208CHM/409" }, // Renamed to ensure uniqueness
-    { username: "ABDULKADIR", password: "23/208CHM/387" },
-    { username: "GERALD", password: "23/208CHM/356" },
-    { username: "FAVOUR", password: "23/208CHM/359" },
-    { username: "OYIZA", password: "23/208CHM/367" },
-    { username: "MARY", password: "23/208CHM/385" },
-    { username: "PESH", password: "23/208CHM/411" },
-    { username: "SARAH", password: "23/208CHM/413" },
-    { username: "NGOZI", password: "23/208CHM/343" },
-    { username: "DANIEL", password: "23/208CHM/291" },
-    { username: "ANGEL", password: "23/208CHM/366" },
-    { username: "VICTORIA", password: "23/208CHM/351" },
-    { username: "GUEST-I", password: "0000A" },
     { username: "GUEST-II", password: "1111B" },
     // Admin account
     { username: "ADMIN", password: "04926514", isAdmin: true }  
@@ -48,183 +20,181 @@ const users = [
 
 const questions = [
     { 
-        question: "Which early hominid species is associated with the first known use of stone tools?", 
-        options: ["Australopithecus", "Neanderthals", "Homo habilis", "Homo erectus"], 
-        answer: "Homo habilis" 
+        question: "Which system is used to track books borrowed from the library?", 
+        options: ["Library Management System", "Accession Register", "Index", "OPAC"], 
+        answer: "Library Management System" 
     },
     { 
-        question: "Which species is considered the first to use fire for cooking and warmth?", 
-        options: ["Neanderthals", "Homo erectus", "Australopithecus", "Homo habilis"], 
-        answer: "Homo erectus" 
+        question: "Which library service allows users to access books and resources online?", 
+        options: ["Library of Congress", "Online Public Access Catalogue (OPAC)", "Academic Library", "Public Library"], 
+        answer: "Online Public Access Catalogue (OPAC)" 
     },
     { 
-        question: "Which early human ancestor had a relatively small brain and is considered one of the earliest hominids?", 
-        options: ["Ramapithecus", "Homo erectus", "Australopithecus", "Homo habilis"], 
-        answer: "Australopithecus" 
+        question: "What does OPAC stand for in library services?", 
+        options: ["Online Public Access Catalogue", "Open Public Access Catalogue", "Official Public Access Center", "Organized Public Access Code"], 
+        answer: "Online Public Access Catalogue" 
     },
     { 
-        question: "Which species is known for living in Europe and parts of western Asia and coexisted with early Homo sapiens?", 
-        options: ["Neanderthals", "Australopithecus", "Ramapithecus", "Homo habilis"], 
-        answer: "Neanderthals" 
+        question: "Which of the following is an online resource commonly used in academic libraries?", 
+        options: ["Journals", "E-books", "Magazines", "Novels"], 
+        answer: "E-books" 
     },
     { 
-        question: "The genus Homo first emerged during which geological period?", 
-        options: ["Holocene", "Pleistocene", "Miocene", "Eocene"], 
-        answer: "Pleistocene" 
+        question: "Which term refers to the digital library of research papers available online?", 
+        options: ["Research Database", "Digital Archive", "E-library", "Digital Repository"], 
+        answer: "Digital Repository" 
     },
     { 
-        question: "Which species is believed to have first migrated out of Africa?", 
-        options: ["Homo erectus", "Australopithecus", "Homo habilis", "Neanderthals"], 
-        answer: "Homo erectus" 
+        question: "What is the primary function of a library database?", 
+        options: ["To store digital books", "To organize printed materials", "To help users search for academic articles and journals", "To keep track of overdue books"], 
+        answer: "To help users search for academic articles and journals" 
     },
     { 
-        question: "Ramapithecus is an early ancestor thought to have existed during which epoch?", 
-        options: ["Holocene", "Miocene", "Pleistocene", "Eocene"], 
-        answer: "Miocene" 
+        question: "Which of the following is an example of an academic online database?", 
+        options: ["Google", "ERIC", "Amazon", "Wikipedia"], 
+        answer: "ERIC" 
     },
     { 
-        question: "Which hominid species is known for creating sophisticated tools using the Levallois technique?", 
-        options: ["Australopithecus", "Neanderthals", "Homo erectus", "Homo habilis"], 
-        answer: "Neanderthals" 
+        question: "Which of the following is NOT a digital library service?", 
+        options: ["Interlibrary loan", "Virtual reference services", "Google Scholar", "Open access journals"], 
+        answer: "Google Scholar" 
     },
     { 
-        question: "Which gas is primarily responsible for the depletion of the ozone layer?", 
-        options: ["Methane", "Chlorofluorocarbons (CFCs)", "Nitrous oxide", "Carbon dioxide"], 
-        answer: "Chlorofluorocarbons (CFCs)" 
+        question: "Which of these is a benefit of digital libraries over physical libraries?", 
+        options: ["They are available 24/7", "They offer fewer resources", "They have a limited collection", "They do not support research"], 
+        answer: "They are available 24/7" 
     },
     { 
-        question: "Which unit is used to measure electric current?", 
-        options: ["Volt", "Watt", "Joule", "Ampere"], 
-        answer: "Ampere" 
+        question: "The technology that allows libraries to loan e-books is called?", 
+        options: ["E-circulation", "E-loan", "Digital loaning", "Electronic lending"], 
+        answer: "E-circulation" 
     },
     { 
-        question: "The fundamental SI unit for measuring length is?", 
-        options: ["Foot", "Inch", "Meter", "Centimeter"], 
-        answer: "Meter" 
+        question: "Which of the following internet tools can be used to search for academic papers?", 
+        options: ["Google Books", "PubMed", "Yahoo Search", "Instagram"], 
+        answer: "PubMed" 
     },
     { 
-        question: "Which instrument is used to measure atmospheric pressure?", 
-        options: ["Barometer", "Thermometer", "Anemometer", "Hygrometer"], 
-        answer: "Barometer" 
+        question: "What does DOI stand for in academic publishing?", 
+        options: ["Digital Object Identifier", "Document Official Identifier", "Direct Online Index", "Database Object Identifier"], 
+        answer: "Digital Object Identifier" 
     },
     { 
-        question: "The vernier caliper is primarily used to measure which of the following?", 
-        options: ["Mass", "Speed", "Length", "Temperature"], 
-        answer: "Length" 
+        question: "Which is the primary function of an e-journal?", 
+        options: ["To provide entertainment", "To deliver academic papers online", "To distribute news", "To sell books"], 
+        answer: "To deliver academic papers online" 
     },
     { 
-        question: "Which of the following refers to energy stored in a stretched or compressed object?", 
-        options: ["Kinetic energy", "Thermal energy", "Elastic potential energy", "Chemical energy"], 
-        answer: "Elastic potential energy" 
+        question: "Which of the following provides free access to research papers and publications?", 
+        options: ["Open Access Journals", "Subscription-based databases", "Private Library", "Magazines"], 
+        answer: "Open Access Journals" 
     },
     { 
-        question: "Kinetic energy is the energy an object possesses due to its?", 
-        options: ["Motion", "Charge", "Temperature", "Position"], 
-        answer: "Motion" 
+        question: "Which library system allows remote access to digital resources for its users?", 
+        options: ["E-library", "OPAC", "Academic Library", "Public Library"], 
+        answer: "E-library" 
     },
     { 
-        question: "Which form of energy is associated with an object’s position relative to the Earth?", 
-        options: ["Gravitational potential energy", "Thermal energy", "Nuclear energy", "Kinetic energy"], 
-        answer: "Gravitational potential energy" 
+        question: "Which service allows libraries to share resources with other libraries over the internet?", 
+        options: ["Interlibrary Loan", "Digital Archives", "OPAC", "Circulation Services"], 
+        answer: "Interlibrary Loan" 
     },
     { 
-        question: "In physics, which law states that energy cannot be created or destroyed, only transformed?", 
-        options: ["Newton's Third Law", "Law of Conservation of Energy", "Ohm's Law", "Law of Inertia"], 
-        answer: "Law of Conservation of Energy" 
+        question: "What does VPN stand for, a tool sometimes used to access library resources remotely?", 
+        options: ["Virtual Private Network", "Virtual Public Network", "Verified Personal Network", "Voluntary Public Network"], 
+        answer: "Virtual Private Network" 
     },
     { 
-        question: "Which device is used to measure temperature?", 
-        options: ["Calorimeter", "Anemometer", "Barometer", "Thermometer"], 
-        answer: "Thermometer" 
+        question: "Which system protects digital library resources from unauthorized access?", 
+        options: ["Encryption", "Subscription", "Classification", "Indexing"], 
+        answer: "Encryption" 
     },
     { 
-        question: "Which form of radiation is most harmful to human tissues?", 
-        options: ["Beta particles", "Alpha particles", "Ultraviolet light", "Gamma rays"], 
-        answer: "Gamma rays" 
+        question: "The process of digitizing physical materials for online use in a library is called?", 
+        options: ["Archiving", "Digitalization", "Conversion", "Scanning"], 
+        answer: "Digitalization" 
     },
     { 
-        question: "Which of the following gases does not contribute significantly to global warming?", 
-        options: ["Methane", "Carbon dioxide", "Nitrous oxide", "Nitrogen"], 
-        answer: "Nitrogen" 
+        question: "Which of the following is a disadvantage of digital libraries?", 
+        options: ["24/7 access", "Limited access without the internet", "Searchable databases", "Lower cost"], 
+        answer: "Limited access without the internet" 
     },
     { 
-        question: "The greenhouse effect is primarily caused by which of the following gases?", 
-        options: ["Carbon dioxide", "Helium", "Oxygen", "Nitrogen"], 
-        answer: "Carbon dioxide" 
+        question: "Which of the following best describes cloud-based library systems?", 
+        options: ["Library systems stored on remote servers", "Traditional physical libraries", "Systems without user access", "Offline library resources"], 
+        answer: "Library systems stored on remote servers" 
     },
     { 
-        question: "Which mineral resource is primarily extracted in Nigeria’s Niger Delta?", 
-        options: ["Coal", "Gold", "Tin", "Petroleum"], 
-        answer: "Petroleum" 
+        question: "Which of these is NOT a role of the library in supporting digital literacy?", 
+        options: ["Teaching users how to use digital tools", "Providing access to e-resources", "Giving access to printed magazines", "Providing computer workstations"], 
+        answer: "Giving access to printed magazines" 
     },
     { 
-        question: "Which process is used to separate petroleum into its components?", 
-        options: ["Condensation", "Cracking", "Polymerization", "Fractional distillation"], 
-        answer: "Fractional distillation" 
+        question: "Which type of library provides specialized resources related to a specific subject area?", 
+        options: ["Special Library", "Public Library", "National Library", "Private Library"], 
+        answer: "Special Library" 
     },
     { 
-        question: "Which fossil fuel is known as 'black gold'?", 
-        options: ["Natural Gas", "Petroleum", "Coal", "Oil Shale"], 
-        answer: "Petroleum" 
+        question: "Which of the following represents a way libraries support e-learning?", 
+        options: ["Providing access to study materials and online courses", "Renting textbooks", "Selling digital books", "Providing internet-free zones"], 
+        answer: "Providing access to study materials and online courses" 
     },
     { 
-        question: "Which gas is used as a shielding gas in welding?", 
-        options: ["Carbon dioxide", "Nitrogen", "Argon", "Oxygen"], 
-        answer: "Argon" 
+        question: "What is a repository in the context of digital libraries?", 
+        options: ["A storage location for physical books", "An online database for storing research data and publications", "A type of library catalog", "A newspaper archive"], 
+        answer: "An online database for storing research data and publications" 
     },
     { 
-        question: "The measurement of mass is typically carried out using which instrument?", 
-        options: ["Calorimeter", "Thermometer", "Balance", "Barometer"], 
-        answer: "Balance" 
+        question: "Which of the following internet tools allows libraries to preserve old and rare books?", 
+        options: ["Digital Archiving", "Cloud Services", "Library Automation", "Web Browsing"], 
+        answer: "Digital Archiving" 
     },
     { 
-        question: "In which layer of the Earth’s atmosphere does the ionosphere reside?", 
-        options: ["Troposphere", "Mesosphere", "Thermosphere", "Stratosphere"], 
-        answer: "Thermosphere" 
+        question: "Which of the following does NOT fall under the responsibility of library technical services?", 
+        options: ["Binding and repairing books", "Cataloging materials", "Shelving books", "Lending books"], 
+        answer: "Lending books" 
     },
     { 
-        question: "Which element has the highest atomic number that is still naturally occurring?", 
-        options: ["Lead", "Thorium", "Plutonium", "Uranium"], 
-        answer: "Uranium" 
+        question: "Which of the following helps libraries manage electronic resources?", 
+        options: ["Electronic Resource Management System", "Dewey Decimal Classification", "Call number system", "Accession register"], 
+        answer: "Electronic Resource Management System" 
     },
     { 
-        question: "Which era is known for the introduction of bronze tools?", 
-        options: ["Iron Age", "Paleolithic Age", "Bronze Age", "Neolithic Age"], 
-        answer: "Bronze Age" 
+        question: "Which of the following best describes 'library automation'?", 
+        options: ["Using technology to manage and operate library functions", "Hiring more staff to improve efficiency", "Building more physical libraries", "Reorganizing physical bookshelves"], 
+        answer: "Using technology to manage and operate library functions" 
     },
     { 
-        question: "Which region in Nigeria is most known for tin mining?", 
-        options: ["Ogun State", "Cross River State", "Niger Delta", "Jos Plateau"], 
-        answer: "Jos Plateau" 
+        question: "Which system is widely used for managing electronic library resources?", 
+        options: ["Library Management System", "Online Public Access Catalogue", "Card Catalogue", "Indexing"], 
+        answer: "Library Management System" 
     },
     { 
-        question: "Which type of fossil is commonly used to determine the age of a sedimentary rock layer?", 
-        options: ["Body fossil", "Molecular fossil", "Index fossil", "Trace fossil"], 
-        answer: "Index fossil" 
+        question: "Which term is used for resources available on the internet but outside the traditional library?", 
+        options: ["Virtual Library", "Database", "Physical Library", "Digital Reserve"], 
+        answer: "Virtual Library" 
     },
     { 
-        question: "What is the primary source of lead pollution?", 
-        options: ["Solar panels", "Lead-based paints", "Hydroelectric dams", "Natural gas"], 
-        answer: "Lead-based paints" 
+        question: "Which of the following is used to protect intellectual property rights in digital libraries?", 
+        options: ["Copyright law", "Subscription fees", "Dewey Decimal System", "Spine mark"], 
+        answer: "Copyright law" 
     },
     { 
-        question: "Which early hominid species is believed to be the direct ancestor of both Neanderthals and Homo sapiens?", 
-        options: ["Homo habilis", "Homo erectus", "Australopithecus", "Homo heidelbergensis"], 
-        answer: "Homo heidelbergensis" 
+        question: "Which of the following library services helps users with research queries?", 
+        options: ["Reference Services", "Circulation Desk", "Cataloging", "Binding"], 
+        answer: "Reference Services" 
     },
     { 
-        question: "Which form of renewable energy relies on the heat from the Earth’s core?", 
-        options: ["Wind energy", "Geothermal energy", "Solar energy", "Hydropower"], 
-        answer: "Geothermal energy" 
+        question: "The act of converting printed library materials to digital form is called?", 
+        options: ["Digitization", "Indexing", "Binding", "Classification"], 
+        answer: "Digitization" 
     },
     { 
-        question: "Which instrument is used to measure the refractive index of a material?", 
-        options: ["Spectrometer", "Barometer", "Refractometer", "Calorimeter"], 
-        answer: "Refractometer" 
+        question: "Which of these is a common internet resource in modern libraries?", 
+        options: ["Wi-Fi access", "Library Stamps", "Reference Desks", "Printed Newspapers"], 
+        answer: "Wi-Fi access" 
     }
-
 ];
-
 
 
 // Initialize variables
@@ -247,7 +217,7 @@ document.getElementById('details-form').addEventListener('submit', (event) => {
             viewResults();  // Admin login, view all results
         } else {
             // Check if user has already taken the exam
-            if (sessionStorage.getItem(`score_${username}`) !== null) {
+            if (localStorage.getItem(`score_${username}`) !== null) {
                 alert("You have already attempted the exam.");
             } else {
                 startExam(username);
