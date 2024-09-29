@@ -25,6 +25,11 @@ const questions = [
         answer: "Technical Services" 
     },
     { 
+        question: "Which of the following describes the process of 'weeding' in a library?", 
+        options: ["Removing outdated or unused materials", "Shelving returned books", "Cataloging new books", "Binding damaged books"], 
+        answer: "Removing outdated or unused materials" 
+    },
+    { 
         question: "Which classification system is used for organizing materials in academic libraries?", 
         options: ["Dewey Decimal Classification", "Call number system", "Card catalog", "Library of Congress Classification"], 
         answer: "Library of Congress Classification" 
