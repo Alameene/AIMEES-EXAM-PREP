@@ -20,181 +20,177 @@ const users = [
 
 const questions = [
     { 
+        question: "Which section of the library is responsible for the classification of books and materials?", 
+        options: ["Reference Services", "Technical Services", "Circulation Desk", "Information Desk"], 
+        answer: "Technical Services" 
+    },
+    { 
+        question: "Which classification system is used for organizing materials in academic libraries?", 
+        options: ["Dewey Decimal Classification", "Call number system", "Card catalog", "Library of Congress Classification"], 
+        answer: "Library of Congress Classification" 
+    },
+    { 
+        question: "Which of the following is a key function of the library catalog?", 
+        options: ["Search for materials in the library", "Shelve returned books", "Manage late returns", "Provide digital archives"], 
+        answer: "Search for materials in the library" 
+    },
+    { 
+        question: "Which technology allows libraries to share materials across institutions?", 
+        options: ["Interlibrary Loan", "OPAC", "Dewey Decimal Classification", "Cataloging"], 
+        answer: "Interlibrary Loan" 
+    },
+    { 
+        question: "Which of these is an electronic library resource?", 
+        options: ["Printed books", "DVDs", "E-journals", "Magazines"], 
+        answer: "E-journals" 
+    },
+    { 
+        question: "Which of the following describes 'metadata' in digital libraries?", 
+        options: ["The content of the books", "A collection of journals", "Information describing other data", "An online reading list"], 
+        answer: "Information describing other data" 
+    },
+    { 
+        question: "What does MARC stand for in library systems?", 
+        options: ["Machine-Readable Cataloging", "Manual Access to Records", "Modern Academic Reference Collection", "Material Archive Resource Center"], 
+        answer: "Machine-Readable Cataloging" 
+    },
+    { 
+        question: "Which of these systems helps to automate cataloging in modern libraries?", 
+        options: ["OPAC", "Card Catalog", "Library Management System", "E-library"], 
+        answer: "Library Management System" 
+    },
+    { 
+        question: "Which of the following provides a list of books and materials in a library?", 
+        options: ["Catalog", "Shelf guide", "Journal database", "Accession register"], 
+        answer: "Catalog" 
+    },
+    { 
+        question: "Which tool helps users locate books on the shelves of a library?", 
+        options: ["Call number", "Spine label", "Accession number", "Volume number"], 
+        answer: "Call number" 
+    },
+    { 
+        question: "Which of the following is a role of the Circulation Desk?", 
+        options: ["Lending books", "Repairing damaged books", "Cataloging books", "Classifying books"], 
+        answer: "Lending books" 
+    },
+    { 
+        question: "Which of the following represents an example of an online research tool?", 
+        options: ["PubMed", "OPAC", "Accession Register", "Library Catalog"], 
+        answer: "PubMed" 
+    },
+    { 
+        question: "Which of the following is an example of a reference resource?", 
+        options: ["Encyclopedias", "Fiction books", "E-books", "Periodicals"], 
+        answer: "Encyclopedias" 
+    },
+    { 
+        question: "What type of resource is usually available through open access?", 
+        options: ["Paid journals", "Public domain works", "Magazines", "Fiction books"], 
+        answer: "Public domain works" 
+    },
+    { 
+        question: "What is the role of a library repository?", 
+        options: ["Store digital materials", "Classify books", "Issue books to users", "Organize events"], 
+        answer: "Store digital materials" 
+    },
+    { 
+        question: "Which of the following is an example of a library database?", 
+        options: ["ERIC", "OPAC", "Index", "Accession Register"], 
+        answer: "ERIC" 
+    },
+    { 
+        question: "The term 'indexing' in a library refers to?", 
+        options: ["The systematic arrangement of articles in journals or books", "The shelving of books", "Lending books to users", "Repairing damaged materials"], 
+        answer: "The systematic arrangement of articles in journals or books" 
+    },
+    { 
+        question: "Which of these is NOT a responsibility of the acquisitions department in a library?", 
+        options: ["Purchasing materials", "Cataloging materials", "Organizing books on shelves", "Managing donations"], 
+        answer: "Organizing books on shelves" 
+    },
+    { 
+        question: "Which term refers to the digitization of library materials for online access?", 
+        options: ["Digital archiving", "Cataloging", "Library automation", "E-lending"], 
+        answer: "Digital archiving" 
+    },
+    { 
+        question: "Which of the following is a core function of reference services in libraries?", 
+        options: ["Assisting with research inquiries", "Providing entertainment", "Issuing library cards", "Cataloging books"], 
+        answer: "Assisting with research inquiries" 
+    },
+    { 
+        question: "What is the purpose of subject heading in library cataloging?", 
+        options: ["Organize books by subject", "Assign call numbers", "Shelve materials", "Track late returns"], 
+        answer: "Organize books by subject" 
+    },
+    { 
+        question: "Which of the following is used to identify the intellectual content of a book?", 
+        options: ["Author", "Call number", "Publisher", "Binding"], 
+        answer: "Author" 
+    },
+    { 
+        question: "The library function that deals with protecting the physical condition of books is?", 
+        options: ["Binding", "Reference", "Circulation", "Cataloging"], 
+        answer: "Binding" 
+    },
+    { 
+        question: "What is a journal database?", 
+        options: ["A collection of academic articles and research papers", "A library catalog", "A tool for shelving books", "A system for borrowing books"], 
+        answer: "A collection of academic articles and research papers" 
+    },
+    { 
+        question: "What does 'open access' mean in the context of digital libraries?", 
+        options: ["Free access to scholarly content", "Paid access to e-resources", "Access restricted to librarians", "Temporary access to print materials"], 
+        answer: "Free access to scholarly content" 
+    },
+    { 
+        question: "The library section that deals with purchasing new books and materials is called?", 
+        options: ["Acquisitions", "Circulation", "Technical Services", "Reference"], 
+        answer: "Acquisitions" 
+    },
+    { 
+        question: "Which tool helps researchers locate specific academic journals or articles?", 
+        options: ["Journal database", "Card catalog", "Index", "Shelf guide"], 
+        answer: "Journal database" 
+    },
+    { 
+        question: "Which of the following describes 'circulation' in library terms?", 
+        options: ["The process of lending and returning books", "Classifying books", "Repairing damaged materials", "Preserving manuscripts"], 
+        answer: "The process of lending and returning books" 
+    },
+    { 
+        question: "Which of these is an essential function of digital libraries?", 
+        options: ["Providing access to e-books and e-journals", "Selling books", "Organizing reading events", "Binding books"], 
+        answer: "Providing access to e-books and e-journals" 
+    },
+    { 
+        question: "Which system helps to organize digital content in libraries?", 
+        options: ["Content Management System (CMS)", "OPAC", "Index", "Catalog card"], 
+        answer: "Content Management System (CMS)" 
+    },
+    { 
+        question: "Which of the following is a challenge faced by digital libraries?", 
+        options: ["Limited physical space", "High maintenance cost", "Privacy concerns", "Lack of online access"], 
+        answer: "Privacy concerns" 
+    },
+    { 
+        question: "Which of these is a key benefit of e-journals?", 
+        options: ["Instant access to academic research", "Lower cost than printed materials", "No need for internet access", "Physical interaction with books"], 
+        answer: "Instant access to academic research" 
+    },
+    { 
         question: "Which system is used to track books borrowed from the library?", 
         options: ["Library Management System", "Accession Register", "Index", "OPAC"], 
         answer: "Library Management System" 
     },
     { 
-        question: "Which library service allows users to access books and resources online?", 
-        options: ["Library of Congress", "Online Public Access Catalogue (OPAC)", "Academic Library", "Public Library"], 
-        answer: "Online Public Access Catalogue (OPAC)" 
-    },
-    { 
-        question: "What does OPAC stand for in library services?", 
-        options: ["Online Public Access Catalogue", "Open Public Access Catalogue", "Official Public Access Center", "Organized Public Access Code"], 
-        answer: "Online Public Access Catalogue" 
-    },
-    { 
-        question: "Which of the following is an online resource commonly used in academic libraries?", 
-        options: ["Journals", "E-books", "Magazines", "Novels"], 
-        answer: "E-books" 
-    },
-    { 
-        question: "Which term refers to the digital library of research papers available online?", 
-        options: ["Research Database", "Digital Archive", "E-library", "Digital Repository"], 
-        answer: "Digital Repository" 
-    },
-    { 
-        question: "What is the primary function of a library database?", 
-        options: ["To store digital books", "To organize printed materials", "To help users search for academic articles and journals", "To keep track of overdue books"], 
-        answer: "To help users search for academic articles and journals" 
-    },
-    { 
-        question: "Which of the following is an example of an academic online database?", 
-        options: ["Google", "ERIC", "Amazon", "Wikipedia"], 
-        answer: "ERIC" 
-    },
-    { 
-        question: "Which of the following is NOT a digital library service?", 
-        options: ["Interlibrary loan", "Virtual reference services", "Google Scholar", "Open access journals"], 
-        answer: "Google Scholar" 
-    },
-    { 
-        question: "Which of these is a benefit of digital libraries over physical libraries?", 
-        options: ["They are available 24/7", "They offer fewer resources", "They have a limited collection", "They do not support research"], 
-        answer: "They are available 24/7" 
-    },
-    { 
-        question: "The technology that allows libraries to loan e-books is called?", 
-        options: ["E-circulation", "E-loan", "Digital loaning", "Electronic lending"], 
-        answer: "E-circulation" 
-    },
-    { 
-        question: "Which of the following internet tools can be used to search for academic papers?", 
-        options: ["Google Books", "PubMed", "Yahoo Search", "Instagram"], 
-        answer: "PubMed" 
-    },
-    { 
-        question: "What does DOI stand for in academic publishing?", 
-        options: ["Digital Object Identifier", "Document Official Identifier", "Direct Online Index", "Database Object Identifier"], 
-        answer: "Digital Object Identifier" 
-    },
-    { 
-        question: "Which is the primary function of an e-journal?", 
-        options: ["To provide entertainment", "To deliver academic papers online", "To distribute news", "To sell books"], 
-        answer: "To deliver academic papers online" 
-    },
-    { 
-        question: "Which of the following provides free access to research papers and publications?", 
-        options: ["Open Access Journals", "Subscription-based databases", "Private Library", "Magazines"], 
-        answer: "Open Access Journals" 
-    },
-    { 
-        question: "Which library system allows remote access to digital resources for its users?", 
-        options: ["E-library", "OPAC", "Academic Library", "Public Library"], 
-        answer: "E-library" 
-    },
-    { 
-        question: "Which service allows libraries to share resources with other libraries over the internet?", 
-        options: ["Interlibrary Loan", "Digital Archives", "OPAC", "Circulation Services"], 
-        answer: "Interlibrary Loan" 
-    },
-    { 
-        question: "What does VPN stand for, a tool sometimes used to access library resources remotely?", 
-        options: ["Virtual Private Network", "Virtual Public Network", "Verified Personal Network", "Voluntary Public Network"], 
-        answer: "Virtual Private Network" 
-    },
-    { 
-        question: "Which system protects digital library resources from unauthorized access?", 
-        options: ["Encryption", "Subscription", "Classification", "Indexing"], 
-        answer: "Encryption" 
-    },
-    { 
-        question: "The process of digitizing physical materials for online use in a library is called?", 
-        options: ["Archiving", "Digitalization", "Conversion", "Scanning"], 
-        answer: "Digitalization" 
-    },
-    { 
-        question: "Which of the following is a disadvantage of digital libraries?", 
-        options: ["24/7 access", "Limited access without the internet", "Searchable databases", "Lower cost"], 
-        answer: "Limited access without the internet" 
-    },
-    { 
-        question: "Which of the following best describes cloud-based library systems?", 
-        options: ["Library systems stored on remote servers", "Traditional physical libraries", "Systems without user access", "Offline library resources"], 
-        answer: "Library systems stored on remote servers" 
-    },
-    { 
-        question: "Which of these is NOT a role of the library in supporting digital literacy?", 
-        options: ["Teaching users how to use digital tools", "Providing access to e-resources", "Giving access to printed magazines", "Providing computer workstations"], 
-        answer: "Giving access to printed magazines" 
-    },
-    { 
-        question: "Which type of library provides specialized resources related to a specific subject area?", 
-        options: ["Special Library", "Public Library", "National Library", "Private Library"], 
-        answer: "Special Library" 
-    },
-    { 
-        question: "Which of the following represents a way libraries support e-learning?", 
-        options: ["Providing access to study materials and online courses", "Renting textbooks", "Selling digital books", "Providing internet-free zones"], 
-        answer: "Providing access to study materials and online courses" 
-    },
-    { 
-        question: "What is a repository in the context of digital libraries?", 
-        options: ["A storage location for physical books", "An online database for storing research data and publications", "A type of library catalog", "A newspaper archive"], 
-        answer: "An online database for storing research data and publications" 
-    },
-    { 
-        question: "Which of the following internet tools allows libraries to preserve old and rare books?", 
-        options: ["Digital Archiving", "Cloud Services", "Library Automation", "Web Browsing"], 
-        answer: "Digital Archiving" 
-    },
-    { 
-        question: "Which of the following does NOT fall under the responsibility of library technical services?", 
-        options: ["Binding and repairing books", "Cataloging materials", "Shelving books", "Lending books"], 
-        answer: "Lending books" 
-    },
-    { 
-        question: "Which of the following helps libraries manage electronic resources?", 
-        options: ["Electronic Resource Management System", "Dewey Decimal Classification", "Call number system", "Accession register"], 
-        answer: "Electronic Resource Management System" 
-    },
-    { 
-        question: "Which of the following best describes 'library automation'?", 
-        options: ["Using technology to manage and operate library functions", "Hiring more staff to improve efficiency", "Building more physical libraries", "Reorganizing physical bookshelves"], 
-        answer: "Using technology to manage and operate library functions" 
-    },
-    { 
-        question: "Which system is widely used for managing electronic library resources?", 
-        options: ["Library Management System", "Online Public Access Catalogue", "Card Catalogue", "Indexing"], 
-        answer: "Library Management System" 
-    },
-    { 
-        question: "Which term is used for resources available on the internet but outside the traditional library?", 
-        options: ["Virtual Library", "Database", "Physical Library", "Digital Reserve"], 
-        answer: "Virtual Library" 
-    },
-    { 
-        question: "Which of the following is used to protect intellectual property rights in digital libraries?", 
-        options: ["Copyright law", "Subscription fees", "Dewey Decimal System", "Spine mark"], 
-        answer: "Copyright law" 
-    },
-    { 
-        question: "Which of the following library services helps users with research queries?", 
-        options: ["Reference Services", "Circulation Desk", "Cataloging", "Binding"], 
-        answer: "Reference Services" 
-    },
-    { 
-        question: "The act of converting printed library materials to digital form is called?", 
-        options: ["Digitization", "Indexing", "Binding", "Classification"], 
-        answer: "Digitization" 
-    },
-    { 
-        question: "Which of these is a common internet resource in modern libraries?", 
-        options: ["Wi-Fi access", "Library Stamps", "Reference Desks", "Printed Newspapers"], 
-        answer: "Wi-Fi access" 
+        question: "Which of the following is NOT an internet resource provided by libraries?", 
+        options: ["Google Books", "Journal databases", "E-books", "Printed periodicals"], 
+        answer: "Printed periodicals" 
     }
 ];
+
 
 
 // Initialize variables
