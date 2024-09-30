@@ -70,6 +70,11 @@ const questions = [
         answer: "Catalogue" 
     },
     { 
+        question: "What is the Full-meaning of CMS", 
+        options: ["Content Management System", "Call Mode Series", "Central Mode System", "Cataloguing Method Scheme"], 
+        answer: "Content Management System" 
+    },
+    { 
         question: "Which section of the library typically houses research papers, theses, and dissertations?", 
         options: ["Reference section", "Circulation", "Special collections", "Acquisitions"], 
         answer: "Special collections" 
