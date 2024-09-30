@@ -1,7 +1,7 @@
 // User data with unique usernames
 const users = [
     { username: "AL-AMEEN", password: "23/208CHM/420" },
-    { username: "GUEST", password: "LIBRARY" },
+    { username: "GUEST-I", password: "LIBRARY" },
     { username: "ISAAC", password: "23/207ACC/924" },
     { username: "MICHEAL", password: "23/207ACC/832" },
     { username: "FELICIA", password: "1234" },
